@@ -206,6 +206,8 @@ body {
                 }
             }
 
+
+            // category container styles
             .category {
                 padding-top: 35px;
 
@@ -251,11 +253,15 @@ body {
 
                     .best-seller-container {
                         .seller-container {
+
+                            // ul bags
                             .articles {
                                 display: flex;
                                 justify-content: center;
                                 column-gap: 20px;
                                 padding-top: 27px;
+
+                                // li bags
 
                                 .seller-details {
                                     list-style: none;
@@ -317,6 +323,8 @@ body {
                             }
                         }
 
+
+                        // outer seller container
                         .outer-seller-container {
                             .support-div {
                                 display: flex;
@@ -357,6 +365,8 @@ body {
                 }
             }
 
+            // shop and branch container
+
             .shop-container {
                 .shop-img {
                     background-image: url(./Images/shop.png);
@@ -376,7 +386,7 @@ body {
                             align-items: center;
                             padding-top: 20px;
                             // padding-left: 88px;
-                            
+
                             .branchName {
                                 font: bold 21px/21px @titillium;
                                 color: #675A3D;
@@ -410,10 +420,154 @@ body {
                     }
 
                 }
+
+                // articles and responder container
+                .responders-containers {
+                    .article {
+                        .articleImg {
+                            background-image: url(./Images/law\ enforcement.png);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 380px;
+
+                            .article-contents {
+                                padding: 36px 0px 0px 0px;
+                                max-width: 617px;
+
+                                .container-contents {
+                                    .law {
+                                        font: 600 70px/60px @teko;
+                                        color: @tertiary-color;
+                                        padding-left: 46px;
+
+                                    }
+
+                                    hr {
+                                        margin-top: 10px;
+                                    }
+
+                                    .gearTitle {
+                                        font: bold 38px/76px @titillium;
+                                        color: @tertiary-color;
+                                        letter-spacing: 5px;
+                                        padding-left: 46px;
+
+                                    }
+
+                                }
+
+                                .shopNowBtn {
+                                    height: 54px;
+                                    width: 162px;
+                                    background: @secondary-color;
+                                    color: @tertiary-color;
+                                    font: 600 20px/48px @titillium;
+                                    border: none;
+                                    margin-left: 46px;
+                                }
+
+                                .ulLists {
+                                    background: linear-gradient(90deg, #040065 0, #040065 34%, #151074 58%, #7f7be0 79%, #7f7be0 100%);
+                                    height: 60px;
+                                    margin-top: 22px;
+                                    width: 1440px;
+
+                                    .articleUL {
+
+                                        display: flex;
+                                        column-gap: 57px;
+                                        align-items: center;
+                                        // justify-content: center;
+                                        padding-top: 20px;
+                                        padding-left: 68px;
+
+                                        .articleLi {
+                                            font: 600 19px/17px @titillium;
+                                            color: @tertiary-color;
+                                            list-style: square;
+
+                                        }
+
+                                        .articleLi::marker {
+                                            color: #D0DD94;
+
+                                        }
+
+                                    }
+                                }
+
+                                // all bags positioning over responder container
+                                .allBags {
+                                    position: relative;
+
+                                    .all-bag-img {
+                                        position: absolute;
+                                        bottom: -79px;
+                                        left: 564px;
+                                        /* max-width: 867px; */
+                                        width: 867px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // description sections styles
+
+                .description-section {
+                    .content-bio {
+                        text-align: center;
+                        padding: 75px 160px 56px 160px;
+
+                        .description-contents {
+                            font: 400 italic 24px/32px @titillium;
+                        }
+
+                        .author {
+                            font: 500 14px/22px @titillium;
+                            padding-top: 10px;
+
+                        }
+                    }
+                }
+
+
+
+
             }
 
+        }
 
+        // footer container
+
+        .footer-container{
+            .footer-div{
+                .footer-img{
+                    width: 100%;
+                }
+            }
         }
     }
 
+}
+
+@media screen and (min-width:1366) {
+
+
+    body 
+    .main-container
+     .inner-main-container
+      .category 
+      .inner-category-container
+       .line-div
+        .line {
+        padding: 0px 31px 0px 31px;
+        position: absolute;
+        bottom: -9px;
+        width: 100%;
+    }
+    
 }
