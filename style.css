@@ -708,6 +708,7 @@ body .main-container .inner-main-container .shop-container .shop-img .branch-tit
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-shadow: 0px 3px 12px #00000047;
 }
 body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branch-details .branchDiv .branches .shop-info .brand {
   font: bold 16px/16px 'Titillium Web', sans-serif;
