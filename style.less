@@ -155,6 +155,7 @@ body {
 
 
                     }
+
                     // outer-first-container
 
                     .outer-first-container {
@@ -167,25 +168,34 @@ body {
                                     column-gap: 12px;
 
                                     .grids {
+                                        position: relative;
 
-                                        .garment{
+                                        .garment {
                                             width: 100%;
                                         }
-                                        .duffle{
+
+                                        .duffle {
                                             width: 100%;
                                         }
-                                        .assault{
+
+                                        .assault {
                                             width: 100%;
                                         }
+
                                         h2 {
                                             text-align: center;
                                             font: bold 50px/78px @teko;
+                                            position: absolute;
+                                            bottom: 10px;
+                                            left: 97px;
+
                                         }
+
                                         h4 {
-                                            
+
                                             font: 600 16px/39px @titillium;
                                             text-align: center;
-                                            color:@secondary-color;
+                                            color: @secondary-color;
 
                                         }
                                     }
@@ -196,21 +206,151 @@ body {
                 }
             }
 
-            .category{
-                .inner-category-container{
+            .category {
+                padding-top: 35px;
+
+                .inner-category-container {
                     background-image: url(./Images/category\ container.png);
                     background-position: center;
                     background-size: cover;
                     width: 100%;
                     height: 675px;
 
-                    .center-btns{
-                        .sellerBtn{
+                    .center-btns {
+                        padding-top: 52px;
+                        display: flex;
+                        column-gap: 25px;
+                        justify-content: center;
+
+                        .sellerBtn {
                             width: 200px;
                             height: 50px;
                             background-color: @primary-font-color;
                             color: @tertiary-color;
                             border-radius: 6px 6px 0px 0px;
+                            font: bold 20px/48px @sarala;
+                        }
+
+                        .arrivalBtn {
+                            font: bold 20px/48px @sarala;
+                            border: none;
+
+                        }
+                    }
+
+                    .line-div {
+                        position: relative;
+
+                        .line {
+                            padding: 0px 31px 0px 31px;
+                            position: absolute;
+                            bottom: -9px;
+
+                        }
+                    }
+
+                    .best-seller-container {
+                        .seller-container {
+                            .articles {
+                                display: flex;
+                                justify-content: center;
+                                column-gap: 20px;
+                                padding-top: 27px;
+
+                                .seller-details {
+                                    list-style: none;
+
+                                    .cardDiv {
+                                        width: 221px;
+
+                                        .cards {
+                                            .cardImg {
+                                                height: 215px;
+                                                width: 215px;
+                                                background: white;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                box-shadow: 0px 3px 12px #00000047;
+
+                                                .card-box {
+                                                    height: auto;
+                                                    max-width: 215px;
+                                                }
+
+                                            }
+
+                                            .card-info {
+                                                padding-top: 20px;
+
+                                                .ratings {
+                                                    span.material-symbols-outlined {
+                                                        color: #FFA600;
+                                                        font-size: 15px;
+
+                                                    }
+
+                                                    .numberRating {
+                                                        font: 400 16px/20px @sarala ;
+                                                        color: #989898;
+                                                    }
+                                                }
+
+                                                .mystery {
+                                                    font: bold 20px/20px @sarala;
+                                                    color: #474747;
+                                                    padding-top: 5px;
+
+                                                }
+
+                                                .price {
+                                                    font: bold 26px/30px @sarala;
+                                                    color: @secondary-color;
+                                                    padding-top: 10px;
+
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .outer-seller-container {
+                            .support-div {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 38px 0px 30px 0px;
+
+                                .support-details {
+                                    background-image: url(./Images/solider.png);
+                                    background-position: center;
+                                    background-size: cover;
+                                    width: 100%;
+                                    max-width: 663px;
+                                    height: 131px;
+
+                                    .gearText {
+                                        font: bold 28px/28px @sarala;
+                                        color: @tertiary-color;
+                                        letter-spacing: 1px;
+                                        padding: 32px 0px 10px 146px;
+                                    }
+
+                                    .expertText {
+                                        font: 600 19px/17px @titillium;
+                                        color: @tertiary-color;
+                                        padding: 5px 0px 0px 200px;
+                                    }
+
+                                    .mobNum {
+                                        font-weight: bold;
+                                        color: #D0DD94;
+                                    }
+                                }
+                            }
                         }
                     }
 

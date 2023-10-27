@@ -534,6 +534,9 @@ body .main-container .inner-main-container .first-container .inner-first-contain
   display: flex;
   column-gap: 12px;
 }
+body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids {
+  position: relative;
+}
 body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids .garment {
   width: 100%;
 }
@@ -546,11 +549,17 @@ body .main-container .inner-main-container .first-container .inner-first-contain
 body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids h2 {
   text-align: center;
   font: bold 50px/78px 'Teko', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 97px;
 }
 body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids h4 {
   font: 600 16px/39px 'Titillium Web', sans-serif;
   text-align: center;
   color: #F16C00;
+}
+body .main-container .inner-main-container .category {
+  padding-top: 35px;
 }
 body .main-container .inner-main-container .category .inner-category-container {
   background-image: url(Images/category\ container.png);
@@ -559,10 +568,104 @@ body .main-container .inner-main-container .category .inner-category-container {
   width: 100%;
   height: 675px;
 }
+body .main-container .inner-main-container .category .inner-category-container .center-btns {
+  padding-top: 52px;
+  display: flex;
+  column-gap: 25px;
+  justify-content: center;
+}
 body .main-container .inner-main-container .category .inner-category-container .center-btns .sellerBtn {
   width: 200px;
   height: 50px;
   background-color: black;
   color: #FFFFFF;
   border-radius: 6px 6px 0px 0px;
+  font: bold 20px/48px 'Sarala', sans-serif;
+}
+body .main-container .inner-main-container .category .inner-category-container .center-btns .arrivalBtn {
+  font: bold 20px/48px 'Sarala', sans-serif;
+  border: none;
+}
+body .main-container .inner-main-container .category .inner-category-container .line-div {
+  position: relative;
+}
+body .main-container .inner-main-container .category .inner-category-container .line-div .line {
+  padding: 0px 31px 0px 31px;
+  position: absolute;
+  bottom: -9px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 27px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details {
+  list-style: none;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv {
+  width: 221px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .cardImg {
+  height: 215px;
+  width: 215px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 12px #00000047;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .cardImg .card-box {
+  height: auto;
+  max-width: 215px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .card-info {
+  padding-top: 20px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .card-info .ratings span.material-symbols-outlined {
+  color: #FFA600;
+  font-size: 15px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .card-info .ratings .numberRating {
+  font: 400 16px/20px 'Sarala', sans-serif;
+  color: #989898;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .card-info .mystery {
+  font: bold 20px/20px 'Sarala', sans-serif;
+  color: #474747;
+  padding-top: 5px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details .cardDiv .cards .card-info .price {
+  font: bold 26px/30px 'Sarala', sans-serif;
+  color: #F16C00;
+  padding-top: 10px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .outer-seller-container .support-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 0px 30px 0px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .outer-seller-container .support-div .support-details {
+  background-image: url(Images/solider.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 663px;
+  height: 131px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .outer-seller-container .support-div .support-details .gearText {
+  font: bold 28px/28px 'Sarala', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  padding: 32px 0px 10px 146px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .outer-seller-container .support-div .support-details .expertText {
+  font: 600 19px/17px 'Titillium Web', sans-serif;
+  color: #FFFFFF;
+  padding: 5px 0px 0px 200px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .outer-seller-container .support-div .support-details .mobNum {
+  font-weight: bold;
+  color: #D0DD94;
 }
