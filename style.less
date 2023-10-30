@@ -37,6 +37,10 @@ body {
                         .header-pic {
                             width: 100%;
                         }
+
+                        .header-mobile {
+                            display: none;
+                        }
                     }
                 }
 
@@ -89,7 +93,7 @@ body {
                             font: 800 23px/21px @titillium;
                         }
 
-                        span {
+                        .onAllProducts {
                             font: bold 14px/23px @titillium;
                             color: black;
 
@@ -117,16 +121,20 @@ body {
                             align-items: center;
                             justify-content: space-between;
 
-                            .colors {
-                                width: 224px;
-                                height: 40px;
-                                margin-bottom: 235px;
-                                font: 600 20px @teko;
-                                background-color: #727D49;
-                                color: @tertiary-color;
-                                border: none;
-                                -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-                                padding-left: 20px;
+                            .btnDiv {
+
+                                .colors {
+                                    width: 224px;
+                                    height: 40px;
+                                    margin-bottom: 235px;
+                                    font: 600 20px @teko;
+                                    background-color: #727D49;
+                                    color: @tertiary-color;
+                                    border: none;
+                                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+                                    padding-left: 20px;
+                                }
+
                             }
 
 
@@ -141,33 +149,37 @@ body {
                             max-width: 760px;
                             height: 400px;
 
+                            .inner-parentDiv {
+                                .loadout {
+                                    font: bold 90px/74px @teko;
+                                    color: @tertiary-color;
+                                    padding-left: 35px;
+                                    padding-top: 35px;
+                                }
 
-                            .loadout {
-                                font: bold 90px/74px @teko;
-                                color: @tertiary-color;
-                                padding-left: 35px;
-                                padding-top: 35px;
+                                .loadout-content {
+                                    font: 600 22px/27px @titillium;
+                                    color: @tertiary-color;
+                                    padding-left: 35px;
+                                    padding-top: 20px;
+                                    max-width: 304px;
+                                    padding-top: 10px;
+                                }
+
+
+                                .shopBtn {
+                                    height: 40px;
+                                    width: 151px;
+                                    background: @secondary-color;
+                                    color: @tertiary-color;
+                                    font: 600 16px/39px @titillium;
+                                    border: none;
+                                    margin-top: 35px;
+                                    margin-left: 35px;
+                                }
+
                             }
 
-                            .loadout-content {
-                                font: 600 22px/27px @titillium;
-                                color: @tertiary-color;
-                                padding-left: 35px;
-                                padding-top: 20px;
-                                max-width: 304px;
-                            }
-
-
-                            .shopBtn {
-                                height: 40px;
-                                width: 151px;
-                                background: @secondary-color;
-                                color: @tertiary-color;
-                                font: 600 16px/39px @titillium;
-                                border: none;
-                                margin-top: 35px;
-                                margin-left: 35px;
-                            }
 
 
 
@@ -177,17 +189,31 @@ body {
                             background-image: url(./Images/admin\ bag.png);
                             background-position: center;
                             background-size: cover;
-                            max-width: 608px;
+                            width: 100%;
+                            max-width: 354px;
+                            height: 233px;
 
 
-                            .loadSpan {
-                                font-size: 64px;
-                                line-height: 74px;
-                            }
+                            .inner-parentDiv {
+                                .loadout {
+                                    font: bold 50px/42px 'Teko', sans-serif;
+                                    padding-left: 15px;
+                                    padding-top: 20px;
+                                }
 
-                            .second {
-                                max-width: 312px;
-                                padding-bottom: 20px;
+                                .loadSpan {
+                                    font-size: 36px;
+                                    line-height: 42px;
+                                }
+
+                                .second {
+                                    max-width: 162px;
+                                    padding-bottom: 15px;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    padding-left: 15px;
+
+                                }
 
                             }
 
@@ -376,8 +402,9 @@ body {
 
                                 .support-details {
                                     background-image: url(./Images/solider.png);
-                                    background-position: center;
+                                    // background-position: center;
                                     background-size: cover;
+                                    background-repeat: no-repeat;
                                     width: 100%;
                                     max-width: 663px;
                                     height: 131px;
@@ -504,6 +531,7 @@ body {
 
                                 }
 
+
                                 .shopNowBtn {
                                     height: 54px;
                                     width: 162px;
@@ -513,6 +541,9 @@ body {
                                     border: none;
                                     margin-left: 46px;
                                 }
+
+
+
 
                                 .ulLists {
                                     background: linear-gradient(90deg, #040065 0, #040065 34%, #151074 58%, #7f7be0 79%, #7f7be0 100%);
@@ -608,7 +639,7 @@ body {
 }
 
 
-// media query for laptop
+// media query for laptop screen
 
 @media screen and (min-width:1024px) and (max-width:1365px) {
 
@@ -621,6 +652,14 @@ body {
 
             .inner-main-container {
                 .header-container {
+                    .header {
+                        .header-img {
+                            .header-mobile {
+                                display: none;
+                            }
+                        }
+                    }
+
                     .header-title {
                         .title-contents {
                             padding: 23px 0PX 20px 37px;
@@ -637,7 +676,7 @@ body {
                         .warranty-div {
                             padding-top: 34px;
                             padding-bottom: 34px;
-                          
+
 
                             .tick {
                                 width: 38px;
@@ -657,13 +696,17 @@ body {
 
                         .inner-div-container {
                             .one {
-                                .colors {
-                                    width: 100%;
-                                    max-width: 157px;
-                                    height: 27px;
-                                    margin-bottom: 170px;
-                                    font-size: 14px;
+
+                                .btnDiv {
+                                    .colors {
+                                        width: 100%;
+                                        max-width: 157px;
+                                        height: 27px;
+                                        margin-bottom: 170px;
+                                        font-size: 14px;
+                                    }
                                 }
+
                             }
 
                             .parentDiv {
@@ -737,9 +780,6 @@ body {
 
                     }
                 }
-
-
-
 
 
                 // laptop view category container
@@ -842,11 +882,7 @@ body {
 
                         }
 
-
-
-
                     }
-
 
 
 
@@ -880,6 +916,7 @@ body {
 
                                     }
 
+
                                     .shopNowBtn {
                                         height: 38px;
                                         width: 115px;
@@ -888,6 +925,9 @@ body {
                                         margin-left: 35px;
 
                                     }
+
+
+
 
                                     .ulLists {
                                         .articleUL {
@@ -932,6 +972,530 @@ body {
                     }
 
 
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+// media query for mobile screen
+
+@media screen and (max-width:767px) {
+
+    body {
+        .main-container {
+            .inner-main-container {
+                .header-container {
+
+
+                    .header {
+                        .header-img {
+                            .header-pic {
+                                display: none;
+
+                            }
+
+                            .header-mobile {
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .header-title {
+                        display: block;
+
+                        .title-contents {
+                            padding: 37px 0px 37px 10px;
+
+                            .title {
+                                font-size: 36px;
+                                line-height: 34px;
+                            }
+
+                            .title-child {
+                                font: bold italic 18px/22px 'Titillium Web', sans-serif;
+                                text-align: center;
+
+                                padding: 10px 30px 0px 30px;
+                            }
+                        }
+
+                        .warranty-div {
+                            padding: 0px;
+                            padding-bottom: 20px;
+
+                            span {
+                                font-size: 18px;
+                                line-height: 17px;
+                            }
+
+                            .onAllProducts {
+                                font: bold 11px/18px 'Titillium Web', sans-serif;
+                            }
+
+                        }
+                    }
+                }
+
+                .first-container {
+                    .inner-first-container {
+                        padding: 0px 10px;
+
+                        .inner-div-container {
+                            flex-direction: column;
+                            row-gap: 10px;
+
+                            .one {
+                                height: 187px;
+                            }
+
+
+
+                            .parentDiv {
+                                display: block;
+                                width: 100%;
+                                max-width: 100%;
+
+
+                                .inner-parentDiv {
+                                    .loadout {
+                                        font-size: 50px;
+                                        line-height: 34px;
+                                        padding-left: 15px;
+                                        padding-top: 15px;
+                                    }
+
+                                    .loadout-content {
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        padding-left: 17px;
+                                        max-width: 162px;
+                                    }
+
+                                    .shopBtn {
+                                        height: 26px;
+                                        width: 99px;
+                                        background: #F16C00;
+                                        color: #FFFFFF;
+                                        font: 600 11px/27px 'Titillium Web', sans-serif;
+                                        border: none;
+                                        margin-top: 16px;
+                                        margin-left: 17px;
+                                    }
+                                }
+
+                                .btnDiv {
+                                    position: relative;
+
+                                    .colors {
+                                        font: 600 14px/52px @teko;
+                                        margin-bottom: 0px;
+                                        height: 27px;
+                                        width: 100%;
+                                        max-width: 157px;
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 75px;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+
+
+
+                            }
+
+                            .two {
+                                .inner-parentDiv {
+                                    .shopBtn {
+                                        height: 26px;
+                                        width: 86px;
+                                        background: #F16C00;
+                                        color: #FFFFFF;
+                                        font: 600 11px/27px 'Titillium Web', sans-serif;
+                                        border: none;
+                                        margin-top: 34px;
+                                        margin-left: 17px;
+                                    }
+                                }
+
+                            }
+                        }
+
+
+                        .outer-first-container {
+                            .outer-div-container {
+                                .grid-container {
+                                    .totalGrids {
+                                        flex-direction: column;
+                                        row-gap: 10px;
+
+
+                                        .grids {
+                                            h2 {
+                                                font-size: 35px;
+                                                line-height: 48px;
+                                                left: 72px;
+
+                                            }
+
+                                            h4 {
+                                                font-size: 12px;
+                                                line-height: 24px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+
+
+
+
+                .category {
+                    .inner-category-container {
+                        height: auto;
+
+
+                        .center-btns {
+                            .sellerBtn {
+                                border: none;
+                                width: 150px;
+                                height: 36px;
+                                background-color: black;
+                                color: #FFFFFF;
+                                border-radius: 6px 6px 0px 0px;
+                                font: bold 18px/35px 'Sarala', sans-serif;
+                            }
+
+                            .arrivalBtn {
+                                font: bold 18px/35px 'Sarala', sans-serif;
+
+                            }
+                        }
+
+                        .line-div {
+                            .line {
+                                display: none;
+                            }
+
+                            .line-mobile {
+                                padding-left: 22px;
+                                padding-bottom: 3px;
+                            }
+                        }
+
+                        .best-seller-container {
+                            .seller-container {
+                                .articles {
+
+                                    position: relative;
+
+                                    .forward {
+                                        height: 58px;
+                                        width: 36px;
+                                        background: #E3E3E3;
+                                        left: 0px;
+                                        top: 80px;
+                                        z-index: 1;
+                                        padding-top: 11px;
+                                        cursor: pointer;
+                                        position: absolute;
+                                        cursor: pointer;
+
+                                        .material-symbols-outlined {
+                                            font-size: 32px;
+                                        }
+                                    }
+
+
+                                    .seller-details {
+                                        max-width: 165px;
+
+                                        .cardDiv {
+                                            max-width: 165px;
+
+                                            .cards {
+                                                .cardImg {
+                                                    width: 100%;
+                                                    max-width: 165px;
+                                                    height: 160px;
+
+                                                    .card-box {
+                                                        height: auto;
+                                                        max-width: 152px;
+                                                    }
+                                                }
+
+                                                .card-info {
+
+                                                    .ratings {
+
+                                                        .material-symbols-outlined {
+
+                                                            font-size: 12px;
+                                                        }
+
+                                                        .numberRating {
+                                                            font-size: 11px;
+                                                        }
+                                                    }
+
+                                                    .mystery {
+                                                        font-size: 14px;
+                                                        line-height: 14px;
+                                                        max-width: 124px;
+                                                    }
+
+                                                    .price {
+                                                        font-size: 19px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .forwardBtn {
+                                        height: 58px;
+                                        width: 36px;
+                                        background: #E3E3E3;
+                                        position: absolute;
+                                        right: 0px;
+                                        top: 80px;
+                                        z-index: 1;
+                                        padding-top: 11px;
+                                        cursor: pointer;
+
+                                        .material-symbols-outlined {
+                                            font-size: 32px;
+                                        }
+                                    }
+
+                                    .mobile {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            .outer-seller-container {
+                                .support-div {
+                                    .support-details {
+                                        // background-position: center;
+                                        background-size: cover;
+                                        width: 100%;
+                                        max-width: 375px;
+                                        height: 131px;
+                                        background-repeat: no-repeat;
+
+                                        .details {
+                                            .gearText {
+                                                font: bold 19px/21px 'Sarala', sans-serif;
+                                                color: #FFFFFF;
+                                                /* letter-spacing: 1px; */
+                                                padding: 32px 0px 10px 178px;
+
+                                            }
+
+                                            .expertText {
+                                                font: 600 14px/17px 'Titillium Web', sans-serif;
+                                                color: #FFFFFF;
+                                                padding: 5px 0px 0px 178px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+
+                // shop container style
+
+                .shop-container {
+                    .shop-img {
+                        height: 500px;
+
+
+                        .branch-title {
+                            .innerBranch {
+                                .branchName {
+                                    font: bold 21px/21px @titillium;
+                                    color: #675A3D;
+                                    text-align: center;
+                                    padding-top: 20px;
+                                }
+                            }
+
+                            .shopUI {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                max-width: 355px;
+                                margin-left: 10px;
+                                row-gap: 10px;
+
+                                .branch-details {
+                                    height: 120px;
+                                    width: 112px;
+
+                                    .branchDiv {
+                                        .branches {
+                                            .shop-info {
+                                                .brand {
+                                                    font-size: 14px;
+                                                    line-height: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .forwardBtnTab {
+                            display: none;
+                        }
+
+                    }
+
+
+                    // responders container style
+
+                    .responders-containers {
+                        .article {
+                            .articleImg {
+                                background-image: url(./Images/mobile\ responder.png);
+                                width: 100%;
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                width: 100%;
+                                height: 588px;
+
+
+                                .article-contents {
+
+                                    .container-contents {
+
+                                        .law {
+                                            font: 600 54px/44px 'Teko', sans-serif;
+                                            color: #FFFFFF;
+                                            padding-left: 20px;
+                                            max-width: 329px;
+                                            width: 100%;
+                                        }
+
+                                        hr {
+                                            width: 80%;
+
+                                        }
+
+                                        .gearTitle {
+                                            font: bold 23px/52px 'Titillium Web', sans-serif;
+                                            color: #FFFFFF;
+                                            letter-spacing: 3px;
+                                            padding-left: 20px;
+                                        }
+                                    }
+
+                                    .shopDiv {
+
+                                        position: relative;
+
+                                        .shopNowBtn {
+                                            height: 38px;
+                                            width: 115px;
+                                            background: #F16C00;
+                                            color: #FFFFFF;
+                                            font: 600 13px/32px 'Titillium Web', sans-serif;
+                                            border: none;
+                                            position: absolute;
+                                            right: 21px;
+                                            bottom: -69px;
+
+                                        }
+                                    }
+
+
+
+
+
+                                    .ulLists {
+                                        background: none;
+                                        margin-top: 0px;
+
+                                        .articleUL {
+                                            display: flex;
+                                            align-items: start;
+                                            padding-top: 20px;
+                                            padding-left: 40px;
+                                            flex-direction: column;
+                                            row-gap: 20px;
+
+                                            .articleLi {
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+
+                                    .allBags {
+                                        .all-bag-img {
+                                            display: none;
+                                        }
+
+                                        .mobile-bags {
+                                            display: block;
+                                            width: 100%;
+                                            padding-top: 34px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    // description container styles
+
+                    .description-section {
+                        .content-bio {
+                            text-align: center;
+                            padding: 120px 20px 56px 20px;
+
+                            .description-contents {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+
+
+
+                // footer style
+
+                .footer-container {
+                    .footer-div {
+                        .footer-img {
+                            display: none;
+                        }
+
+                        .footer-mobile {
+                            display: block;
+                        }
+                    }
                 }
 
             }
