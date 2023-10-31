@@ -551,24 +551,13 @@ body .main-container .inner-main-container .first-container .inner-first-contain
   background-position: center;
   background-size: cover;
   width: 100%;
-  max-width: 354px;
-  height: 233px;
-}
-body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .inner-parentDiv .loadout {
-  font: bold 50px/42px 'Teko', sans-serif;
-  padding-left: 15px;
+  max-width: 608px;
+  height: 400px;
   padding-top: 20px;
 }
-body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .inner-parentDiv .loadSpan {
-  font-size: 36px;
-  line-height: 42px;
-}
-body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .inner-parentDiv .second {
-  max-width: 162px;
-  padding-bottom: 15px;
-  font-size: 14px;
-  line-height: 16px;
-  padding-left: 15px;
+body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .loadSpan {
+  font-size: 64px;
+  line-height: 74px;
 }
 body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container {
   margin-top: 10px;
@@ -638,11 +627,17 @@ body .main-container .inner-main-container .category .inner-category-container .
   bottom: -9px;
   width: 100%;
 }
+body .main-container .inner-main-container .category .inner-category-container .line-div .line-mobile {
+  display: none;
+}
 body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles {
   display: flex;
   justify-content: center;
   column-gap: 20px;
   padding-top: 27px;
+}
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forward {
+  display: none;
 }
 body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .seller-details {
   list-style: none;
@@ -684,6 +679,9 @@ body .main-container .inner-main-container .category .inner-category-container .
   color: #F16C00;
   padding-top: 10px;
 }
+body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .forwardBtn {
+  display: none;
+}
 body .main-container .inner-main-container .category .inner-category-container .best-seller-container .outer-seller-container .support-div {
   display: flex;
   align-items: center;
@@ -721,17 +719,26 @@ body .main-container .inner-main-container .shop-container .shop-img {
   width: 100%;
   height: 180px;
 }
+body .main-container .inner-main-container .shop-container .shop-img .branch-title {
+  display: flex;
+  align-items: center;
+}
+body .main-container .inner-main-container .shop-container .shop-img .branch-title .innerBranch {
+  max-width: 102px;
+  margin-left: 88px;
+}
+body .main-container .inner-main-container .shop-container .shop-img .branch-title .innerBranch .branchName {
+  font: bold 21px/21px 'Titillium Web', sans-serif;
+  color: #675A3D;
+  padding-right: 20px;
+  width: 100%;
+}
 body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI {
   display: flex;
   column-gap: 10px;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-}
-body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branchName {
-  font: bold 21px/21px 'Titillium Web', sans-serif;
-  color: #675A3D;
-  padding-right: 20px;
 }
 body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branch-details {
   height: 140px;
@@ -747,6 +754,9 @@ body .main-container .inner-main-container .shop-container .shop-img .branch-tit
   font: bold 16px/16px 'Titillium Web', sans-serif;
   color: black;
 }
+body .main-container .inner-main-container .shop-container .shop-img .forwardBtnTab {
+  display: none;
+}
 body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg {
   background-image: url(Images/law\ enforcement.png);
   background-position: center;
@@ -759,7 +769,7 @@ body .main-container .inner-main-container .shop-container .responders-container
   padding: 36px 0px 0px 0px;
 }
 body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents {
-  max-width: 617px;
+  max-width: 570px;
 }
 body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents .law {
   font: 600 70px/60px 'Teko', sans-serif;
@@ -768,6 +778,8 @@ body .main-container .inner-main-container .shop-container .responders-container
 }
 body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents hr {
   margin-top: 10px;
+  width: 100%;
+  max-width: 576px;
 }
 body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents .gearTitle {
   font: bold 38px/76px 'Titillium Web', sans-serif;
@@ -820,6 +832,9 @@ body .main-container .inner-main-container .shop-container .responders-container
   /* max-width: 867px; */
   width: 100%;
 }
+body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .allBags .mobile-bags {
+  display: none;
+}
 body .main-container .inner-main-container .shop-container .description-section .content-bio {
   text-align: center;
   padding: 75px 160px 56px 160px;
@@ -833,6 +848,9 @@ body .main-container .inner-main-container .shop-container .description-section 
 }
 body .main-container .footer-container .footer-div .footer-img {
   width: 100%;
+}
+body .main-container .footer-container .footer-div .footer-mobile {
+  display: none;
 }
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
   body .main-container {
@@ -861,34 +879,39 @@ body .main-container .footer-container .footer-div .footer-img {
     padding: 0px 20px;
   }
   body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .one .btnDiv .colors {
-    width: 100%;
     max-width: 157px;
     height: 27px;
     margin-bottom: 170px;
     font-size: 14px;
   }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two {
+    width: 434px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .loadSpan {
+    font-size: 45px;
+    line-height: 51px;
+  }
   body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv {
     width: 100%;
     height: 285px;
-    max-width: 542px;
   }
-  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .loadout {
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .loadout {
     font: bold 64px/53px 'Teko', sans-serif;
     color: #FFFFFF;
     padding-left: 25px;
     padding-top: 25px;
   }
-  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .loadout-content {
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .loadout-content {
     font: 600 16px/22px 'Titillium Web', sans-serif;
     color: #FFFFFF;
     padding-left: 25px;
     padding-top: 10px;
     max-width: 222px;
   }
-  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .second {
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .second {
     padding-top: 20px;
   }
-  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .shopBtn {
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .shopBtn {
     height: 28px;
     width: 108px;
     background: #F16C00;
@@ -897,13 +920,6 @@ body .main-container .footer-container .footer-div .footer-img {
     border: none;
     margin-top: 20px;
     margin-left: 25px;
-  }
-  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two {
-    width: 434px;
-  }
-  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .loadSpan {
-    font-size: 42px;
-    line-height: 55px;
   }
   body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids h2 {
     font-size: 35px;
@@ -934,7 +950,7 @@ body .main-container .footer-container .footer-div .footer-img {
   body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .space {
     display: none;
   }
-  body .main-container .inner-main-container .shop-container .shop-img .forwardBtn {
+  body .main-container .inner-main-container .shop-container .shop-img .forwardBtnTab {
     height: 58px;
     width: 36px;
     background: #E3E3E3;
@@ -944,8 +960,9 @@ body .main-container .footer-container .footer-div .footer-img {
     z-index: 1;
     padding-top: 11px;
     cursor: pointer;
+    display: block;
   }
-  body .main-container .inner-main-container .shop-container .shop-img .forwardBtn .material-symbols-outlined {
+  body .main-container .inner-main-container .shop-container .shop-img .forwardBtnTab .material-symbols-outlined {
     font-size: 32px;
   }
   body .main-container .inner-main-container .shop-container .shop-img .branch-title::before {
@@ -1010,6 +1027,210 @@ body .main-container .footer-container .footer-div .footer-img {
     font: 400 italic 20px/28px 'Titillium Web', sans-serif;
   }
 }
+@media screen and (max-width: 1023px) {
+  body .main-container .inner-main-container .header-container .header-title .title-contents {
+    padding: 38px 0px 37px 30px;
+  }
+  body .main-container .inner-main-container .header-container .header-title .title-contents .title {
+    font: bold 37px/36px 'Teko', sans-serif;
+    width: 100%;
+    max-width: 537px;
+  }
+  body .main-container .inner-main-container .header-container .header-title .title-contents .title-child {
+    font: bold italic 18px/20px 'Titillium Web', sans-serif;
+  }
+  body .main-container .inner-main-container .header-container .header-title .warranty-div {
+    padding: 0px;
+  }
+  body .main-container .inner-main-container .header-container .header-title .warranty-div .tick {
+    height: 45px;
+  }
+  body .main-container .inner-main-container .header-container .header-title .warranty-div .allProducts {
+    font: 800 19px/16px 'Titillium Web', sans-serif;
+  }
+  body .main-container .inner-main-container .header-container .header-title .warranty-div .onAllProducts {
+    font: bold 12px/15px 'Titillium Web', sans-serif;
+    color: black;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .one .inner-parentDiv .loadout {
+    width: 316px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .one .btnDiv .colors {
+    width: 139px;
+    height: 31px;
+    margin-top: 50px;
+    font: 600 13px 'Teko', sans-serif;
+    padding-left: 11px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two {
+    padding-top: 0px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .two .inner-parentDiv .loadSpan {
+    font-size: 43px;
+    line-height: 40px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv {
+    max-height: 214px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .loadout {
+    font: bold 50px/42px 'Teko', sans-serif;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-top: 20px;
+    max-width: 280px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .loadout-content {
+    font: 600 14px/16px 'Titillium Web', sans-serif;
+    padding-left: 20px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .shopBtn {
+    margin-left: 20px;
+    height: 30px;
+    width: 130px;
+    background: #F16C00;
+    color: #FFFFFF;
+    font: 600 13px/31px 'Titillium Web', sans-serif;
+    border: none;
+    margin-top: 10px;
+  }
+  body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids h2 {
+    text-align: center;
+    font: bold 30px/27px 'Teko', sans-serif;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .line-div .line {
+    bottom: -5px;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles {
+    position: relative;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .assault {
+    display: none;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .laptop {
+    display: none;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forward {
+    height: 58px;
+    width: 36px;
+    background: #E3E3E3;
+    position: absolute;
+    left: 12px;
+    top: 102px;
+    z-index: 1;
+    padding-top: 11px;
+    cursor: pointer;
+    display: block;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forward .material-symbols-outlined {
+    font-size: 32px;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forwardBtn {
+    height: 58px;
+    width: 36px;
+    background: #E3E3E3;
+    position: absolute;
+    top: 102px;
+    z-index: 1;
+    padding-top: 11px;
+    cursor: pointer;
+    display: block;
+    right: 18px;
+  }
+  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forwardBtn .material-symbols-outlined {
+    font-size: 32px;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img {
+    position: relative;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .innerBranch {
+    margin-left: 10px;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .innerBranch .branchName {
+    font: bold 17px/17px 'Titillium Web', sans-serif;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .navy {
+    display: none;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .space {
+    display: none;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .mariane {
+    display: none;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .lawEnforce {
+    display: none;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .forwardBtnTab {
+    height: 58px;
+    width: 36px;
+    background: #E3E3E3;
+    position: absolute;
+    right: 0px;
+    top: 54px;
+    z-index: 1;
+    padding-top: 11px;
+    cursor: pointer;
+    display: block;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .forwardBtnTab .material-symbols-outlined {
+    font-size: 32px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg {
+    height: 288px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents .law {
+    font: 600 35px/41px 'Teko', sans-serif;
+    color: #FFFFFF;
+    padding-left: 30px;
+    max-width: 300px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents hr {
+    max-width: 305px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .container-contents .gearTitle {
+    font: bold 24px/36px 'Titillium Web', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    padding-left: 30px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .shopNowBtn {
+    height: 43px;
+    width: 150px;
+    background: #F16C00;
+    color: #FFFFFF;
+    font: 600 17px/44px 'Titillium Web', sans-serif;
+    border: none;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .ulLists .articleUL {
+    padding-left: 45px;
+    column-gap: 30px;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .ulLists .articleUL .articleLi {
+    font: 600 13px/13px 'Titillium Web', sans-serif;
+    color: #FFFFFF;
+    list-style: square;
+  }
+  body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .allBags .all-bag-img {
+    position: absolute;
+    bottom: -11px;
+    left: 368px;
+    max-width: 400px;
+    width: 100%;
+  }
+  body .main-container .inner-main-container .shop-container .description-section .content-bio {
+    padding: 75px 82px 56px 80px;
+  }
+}
 @media screen and (max-width: 767px) {
   body .main-container .inner-main-container .header-container .header .header-img .header-pic {
     display: none;
@@ -1022,20 +1243,22 @@ body .main-container .footer-container .footer-div .footer-img {
     display: block;
   }
   body .main-container .inner-main-container .header-container .header-title .title-contents {
-    padding: 37px 0px 37px 10px;
+    padding: 38px 18px 20px 20px;
   }
   body .main-container .inner-main-container .header-container .header-title .title-contents .title {
-    font-size: 36px;
-    line-height: 34px;
+    font: bold 36px/34px 'Teko', sans-serif;
   }
   body .main-container .inner-main-container .header-container .header-title .title-contents .title-child {
     font: bold italic 18px/22px 'Titillium Web', sans-serif;
     text-align: center;
-    padding: 10px 30px 0px 30px;
+    padding: 10px 44px 0px 30px;
   }
   body .main-container .inner-main-container .header-container .header-title .warranty-div {
     padding: 0px;
     padding-bottom: 20px;
+  }
+  body .main-container .inner-main-container .header-container .header-title .warranty-div .tick {
+    height: 51px;
   }
   body .main-container .inner-main-container .header-container .header-title .warranty-div span {
     font-size: 18px;
@@ -1064,6 +1287,8 @@ body .main-container .footer-container .footer-div .footer-img {
     line-height: 34px;
     padding-left: 15px;
     padding-top: 15px;
+    width: 100%;
+    max-width: 100%;
   }
   body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .loadout-content {
     font-size: 14px;
@@ -1113,7 +1338,8 @@ body .main-container .footer-container .footer-div .footer-img {
   body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids h2 {
     font-size: 35px;
     line-height: 48px;
-    left: 72px;
+    left: 82px;
+    bottom: 10px;
   }
   body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids h4 {
     font-size: 12px;
@@ -1140,6 +1366,7 @@ body .main-container .footer-container .footer-div .footer-img {
   body .main-container .inner-main-container .category .inner-category-container .line-div .line-mobile {
     padding-left: 22px;
     padding-bottom: 3px;
+    display: block;
   }
   body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles {
     position: relative;
@@ -1154,6 +1381,7 @@ body .main-container .footer-container .footer-div .footer-img {
     padding-top: 11px;
     position: absolute;
     cursor: pointer;
+    display: block;
   }
   body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forward .material-symbols-outlined {
     font-size: 32px;
@@ -1197,6 +1425,7 @@ body .main-container .footer-container .footer-div .footer-img {
     z-index: 1;
     padding-top: 11px;
     cursor: pointer;
+    display: block;
   }
   body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forwardBtn .material-symbols-outlined {
     font-size: 32px;
@@ -1225,6 +1454,14 @@ body .main-container .footer-container .footer-div .footer-img {
   body .main-container .inner-main-container .shop-container .shop-img {
     height: 500px;
   }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title {
+    display: block;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .innerBranch {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
   body .main-container .inner-main-container .shop-container .shop-img .branch-title .innerBranch .branchName {
     font: bold 21px/21px 'Titillium Web', sans-serif;
     color: #675A3D;
@@ -1235,7 +1472,7 @@ body .main-container .footer-container .footer-div .footer-img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 355px;
-    margin-left: 10px;
+    margin: 0 auto;
     row-gap: 10px;
   }
   body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branch-details {
@@ -1245,6 +1482,18 @@ body .main-container .footer-container .footer-div .footer-img {
   body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branch-details .branchDiv .branches .shop-info .brand {
     font-size: 14px;
     line-height: 14px;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .lawEnforce {
+    display: block;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .mariane {
+    display: block;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .navy {
+    display: block;
+  }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .space {
+    display: block;
   }
   body .main-container .inner-main-container .shop-container .shop-img .forwardBtnTab {
     display: none;
@@ -1323,5 +1572,6 @@ body .main-container .footer-container .footer-div .footer-img {
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-mobile {
     display: block;
+    width: 100%;
   }
 }

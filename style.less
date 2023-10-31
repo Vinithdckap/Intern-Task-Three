@@ -190,32 +190,32 @@ body {
                             background-position: center;
                             background-size: cover;
                             width: 100%;
-                            max-width: 354px;
-                            height: 233px;
+                            max-width: 608px;
+                            height: 400px;
 
 
-                            .inner-parentDiv {
-                                .loadout {
-                                    font: bold 50px/42px 'Teko', sans-serif;
-                                    padding-left: 15px;
-                                    padding-top: 20px;
-                                }
+                            // .inner-parentDiv {
+                            //     .loadout {
+                            //         font: bold 50px/42px 'Teko', sans-serif;
+                            //         padding-left: 15px;
+                            padding-top: 20px;
+                            //     }
 
-                                .loadSpan {
-                                    font-size: 36px;
-                                    line-height: 42px;
-                                }
-
-                                .second {
-                                    max-width: 162px;
-                                    padding-bottom: 15px;
-                                    font-size: 14px;
-                                    line-height: 16px;
-                                    padding-left: 15px;
-
-                                }
-
+                            .loadSpan {
+                                font-size: 64px;
+                                line-height: 74px;
                             }
+
+                            //     .second {
+                            //         max-width: 162px;
+                            //         padding-bottom: 15px;
+                            //         font-size: 14px;
+                            //         line-height: 16px;
+                            //         padding-left: 15px;
+
+                            //     }
+
+                            // }
 
                         }
 
@@ -316,6 +316,10 @@ body {
                             width: 100%;
 
                         }
+
+                        .line-mobile {
+                            display: none;
+                        }
                     }
 
                     .best-seller-container {
@@ -329,6 +333,9 @@ body {
                                 padding-top: 27px;
 
                                 // li bags
+                                .forward {
+                                    display: none;
+                                }
 
                                 .seller-details {
                                     list-style: none;
@@ -389,6 +396,10 @@ body {
                                     }
                                 }
                             }
+
+                            .forwardBtn {
+                                display: none;
+                            }
                         }
 
 
@@ -447,6 +458,24 @@ body {
 
                     .branch-title {
 
+                        display: flex;
+                        align-items: center;
+
+
+                        .innerBranch {
+
+                            max-width: 102px;
+                            margin-left: 88px;
+
+                            .branchName {
+                                font: bold 21px/21px @titillium;
+                                color: #675A3D;
+                                padding-right: 20px;
+                                width: 100%;
+
+                            }
+                        }
+
 
                         .shopUI {
                             display: flex;
@@ -456,12 +485,8 @@ body {
                             padding-top: 20px;
                             // padding-left: 88px;
 
-                            .branchName {
-                                font: bold 21px/21px @titillium;
-                                color: #675A3D;
-                                padding-right: 20px;
 
-                            }
+
 
                             .branch-details {
                                 height: 140px;
@@ -487,7 +512,13 @@ body {
 
 
                             }
+
+
                         }
+                    }
+
+                    .forwardBtnTab {
+                        display: none;
                     }
 
                 }
@@ -508,7 +539,7 @@ body {
 
 
                                 .container-contents {
-                                    max-width: 617px;
+                                    max-width: 570px;
 
                                     .law {
                                         font: 600 70px/60px @teko;
@@ -519,6 +550,8 @@ body {
 
                                     hr {
                                         margin-top: 10px;
+                                        width: 100%;
+                                        max-width: 576px;
                                     }
 
                                     .gearTitle {
@@ -593,6 +626,10 @@ body {
                                         /* max-width: 867px; */
                                         width: 100%;
                                     }
+
+                                    .mobile-bags {
+                                        display: none;
+                                    }
                                 }
                             }
                         }
@@ -631,6 +668,10 @@ body {
             .footer-div {
                 .footer-img {
                     width: 100%;
+                }
+
+                .footer-mobile {
+                    display: none;
                 }
             }
         }
@@ -695,11 +736,13 @@ body {
                         padding: 0px 20px;
 
                         .inner-div-container {
+
+
+
                             .one {
 
                                 .btnDiv {
                                     .colors {
-                                        width: 100%;
                                         max-width: 157px;
                                         height: 27px;
                                         margin-bottom: 170px;
@@ -709,55 +752,71 @@ body {
 
                             }
 
-                            .parentDiv {
-                                width: 100%;
-                                height: 285px;
-                                max-width: 542px;
-
-                                .loadout {
-                                    font: bold 64px/53px 'Teko', sans-serif;
-                                    color: #FFFFFF;
-                                    padding-left: 25px;
-                                    padding-top: 25px;
-
-                                }
-
-
-                                .loadout-content {
-                                    font: 600 16px/22px 'Titillium Web', sans-serif;
-                                    color: #FFFFFF;
-                                    padding-left: 25px;
-                                    padding-top: 10px;
-                                    max-width: 222px;
-                                }
-
-                                .second {
-                                    padding-top: 20px;
-
-                                }
-
-                                .shopBtn {
-                                    height: 28px;
-                                    width: 108px;
-                                    background: #F16C00;
-                                    color: #FFFFFF;
-                                    font: 600 11px/27px 'Titillium Web', sans-serif;
-                                    border: none;
-                                    margin-top: 20px;
-                                    margin-left: 25px;
-                                }
-                            }
 
                             .two {
                                 width: 434px;
 
                                 .loadSpan {
-                                    font-size: 42px;
-                                    line-height: 55px;
+                                    font-size: 45px;
+                                    line-height: 51px;
+
 
                                 }
 
                             }
+
+
+
+
+                            .parentDiv {
+
+                                width: 100%;
+                                height: 285px;
+                                // max-width: 542px;
+
+                                .inner-parentDiv {
+
+
+
+                                    .loadout {
+                                        font: bold 64px/53px 'Teko', sans-serif;
+                                        color: #FFFFFF;
+                                        padding-left: 25px;
+                                        padding-top: 25px;
+
+                                    }
+
+
+                                    .loadout-content {
+                                        font: 600 16px/22px 'Titillium Web', sans-serif;
+                                        color: #FFFFFF;
+                                        padding-left: 25px;
+                                        padding-top: 10px;
+                                        max-width: 222px;
+                                    }
+
+                                    .second {
+                                        padding-top: 20px;
+
+                                    }
+
+                                    .shopBtn {
+                                        height: 28px;
+                                        width: 108px;
+                                        background: #F16C00;
+                                        color: #FFFFFF;
+                                        font: 600 11px/27px 'Titillium Web', sans-serif;
+                                        border: none;
+                                        margin-top: 20px;
+                                        margin-left: 25px;
+                                    }
+
+
+                                }
+
+                            }
+
+
                         }
 
                         // outer first container styles
@@ -846,7 +905,7 @@ body {
 
                         }
 
-                        .forwardBtn {
+                        .forwardBtnTab {
                             height: 58px;
                             width: 36px;
                             background: #E3E3E3;
@@ -856,6 +915,7 @@ body {
                             z-index: 1;
                             padding-top: 11px;
                             cursor: pointer;
+                            display: block;
 
                             .material-symbols-outlined {
                                 font-size: 32px;
@@ -983,6 +1043,383 @@ body {
 }
 
 
+
+
+// media query for tablet screen
+
+
+@media screen and (max-width:1023px) {
+
+
+
+
+    body {
+        .main-container {
+            .inner-main-container {
+
+                .header-container {
+                    .header-title {
+                        .title-contents {
+                            padding: 38px 0px 37px 30px;
+
+                            .title {
+                                font: bold 37px/36px 'Teko', sans-serif;
+                                width: 100%;
+                                max-width: 537px;
+
+
+                            }
+
+                            .title-child {
+                                font: bold italic 18px/20px 'Titillium Web', sans-serif;
+                            }
+                        }
+
+                        .warranty-div {
+
+                            padding: 0px;
+
+                            .tick {
+                                height: 45px;
+
+                            }
+
+                            .allProducts {
+                                font: 800 19px/16px 'Titillium Web', sans-serif;
+                            }
+
+                            .onAllProducts {
+                                font: bold 12px/15px 'Titillium Web', sans-serif;
+                                color: black;
+                            }
+                        }
+                    }
+
+                }
+
+                .first-container {
+                    .inner-first-container {
+                        .inner-div-container {
+
+
+                            .one {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: normal;
+
+
+                                .inner-parentDiv {
+                                    .loadout {
+                                        width: 316px;
+
+                                    }
+                                }
+
+                                .btnDiv {
+                                    .colors {
+                                        width: 139px;
+                                        height: 31px;
+                                        margin-top: 50px;
+                                        font: 600 13px 'Teko', sans-serif;
+                                        padding-left: 11px;
+                                        // margin-bottom: 90px;
+                                    }
+                                }
+                            }
+
+                            .two {
+                                padding-top: 0px;
+
+                                .inner-parentDiv {
+                                    .loadSpan {
+                                        font-size: 43px;
+                                        line-height: 40px;
+
+                                    }
+                                }
+
+                            }
+
+                            .parentDiv {
+
+                                max-height: 214px;
+
+
+                                .inner-parentDiv {
+                                    .loadout {
+                                        font: bold 50px/42px 'Teko', sans-serif;
+                                        color: #FFFFFF;
+                                        padding-left: 20px;
+                                        padding-top: 20px;
+                                        max-width: 280px;
+                                    }
+
+                                    .loadout-content {
+                                        font: 600 14px/16px 'Titillium Web', sans-serif;
+                                        padding-left: 20px;
+
+                                    }
+
+                                    .shopBtn {
+                                        margin-left: 20px;
+                                        height: 30px;
+                                        width: 130px;
+                                        background: #F16C00;
+                                        color: #FFFFFF;
+                                        font: 600 13px/31px 'Titillium Web', sans-serif;
+                                        border: none;
+                                        margin-top: 10px;
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+
+
+                        .outer-first-container {
+                            .outer-div-container {
+                                .grid-container {
+                                    .totalGrids {
+                                        .grids {
+                                            h2 {
+                                                text-align: center;
+                                                font: bold 30px/27px 'Teko', sans-serif;
+                                                position: absolute;
+                                                bottom: 27px;
+                                                left: 29px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+
+                .category {
+                    .inner-category-container {
+                        .line-div {
+                            .line {
+                                bottom: -5px;
+
+                            }
+                        }
+
+                        .best-seller-container {
+                            .seller-container {
+                                .articles {
+
+                                    position: relative;
+
+                                    .assault {
+                                        display: none;
+                                    }
+
+                                    .laptop {
+                                        display: none;
+                                    }
+
+
+
+                                    .forward {
+                                        height: 58px;
+                                        width: 36px;
+                                        background: #E3E3E3;
+                                        position: absolute;
+                                        left: 12px;
+                                        top: 102px;
+                                        z-index: 1;
+                                        padding-top: 11px;
+                                        cursor: pointer;
+                                        display: block;
+
+                                        .material-symbols-outlined {
+                                            font-size: 32px;
+                                        }
+                                    }
+
+                                    .forwardBtn {
+                                        height: 58px;
+                                        width: 36px;
+                                        background: #E3E3E3;
+                                        position: absolute;
+                                        top: 102px;
+                                        z-index: 1;
+                                        padding-top: 11px;
+                                        cursor: pointer;
+                                        display: block;
+                                        right: 18px;
+
+                                        .material-symbols-outlined {
+                                            font-size: 32px;
+                                        }
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .shop-container {
+                    .shop-img {
+
+                        position: relative;
+
+                        .branch-title {
+
+                            .innerBranch {
+                                margin-left: 10px;
+
+                                .branchName {
+                                    font: bold 17px/17px 'Titillium Web', sans-serif;
+                                }
+
+                            }
+
+                            .shopUI {
+                                .navy {
+                                    display: none;
+                                }
+
+                                .space {
+                                    display: none;
+                                }
+
+                                .mariane {
+                                    display: none;
+                                }
+
+                                .lawEnforce {
+                                    display: none;
+                                }
+                            }
+                        }
+
+
+                        .forwardBtnTab {
+                            height: 58px;
+                            width: 36px;
+                            background: #E3E3E3;
+                            position: absolute;
+                            right: 0px;
+                            top: 54px;
+                            z-index: 1;
+                            padding-top: 11px;
+                            cursor: pointer;
+                            display: block;
+
+                            .material-symbols-outlined {
+                                font-size: 32px;
+                            }
+                        }
+
+
+                    }
+
+                    .responders-containers {
+                        .article {
+                            .articleImg {
+                                height: 288px;
+
+                                .article-contents {
+                                    .container-contents {
+                                        .law {
+                                            font: 600 35px/41px 'Teko', sans-serif;
+                                            color: #FFFFFF;
+                                            padding-left: 30px;
+                                            max-width: 300px;
+
+                                        }
+
+                                        hr {
+                                            max-width: 305px;
+
+                                        }
+
+                                        .gearTitle {
+
+                                            font: bold 24px/36px 'Titillium Web', sans-serif;
+                                            color: #FFFFFF;
+                                            letter-spacing: 2px;
+                                            padding-left: 30px;
+
+                                        }
+
+                                    }
+
+
+                                    .shopNowBtn {
+                                        height: 43px;
+                                        width: 150px;
+                                        background: #F16C00;
+                                        color: #FFFFFF;
+                                        font: 600 17px/44px 'Titillium Web', sans-serif;
+                                        border: none;
+                                        margin-left: 30px;
+                                        margin-top: 10px;
+
+                                    }
+
+                                    .ulLists {
+                                        .articleUL {
+                                            padding-left: 45px;
+                                            column-gap: 30px;
+
+
+
+                                            .articleLi {
+                                                font: 600 13px/13px 'Titillium Web', sans-serif;
+                                                color: #FFFFFF;
+                                                list-style: square;
+                                            }
+                                        }
+                                    }
+
+                                    .allBags {
+                                        .all-bag-img {
+                                            position: absolute;
+                                            bottom: -11px;
+                                            left: 368px;
+                                            max-width: 400px;
+                                            width: 100%;
+                                        }
+                                    }
+
+
+                                }
+
+
+                            }
+                        }
+                    }
+
+
+                    .description-section {
+                        .content-bio {
+                            padding: 75px 82px 56px 80px;
+
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }
+
+}
+
 // media query for mobile screen
 
 @media screen and (max-width:767px) {
@@ -1011,24 +1448,32 @@ body {
                         display: block;
 
                         .title-contents {
-                            padding: 37px 0px 37px 10px;
+                            padding: 38px 18px 20px 20px;
+
+
 
                             .title {
-                                font-size: 36px;
-                                line-height: 34px;
+                                font: bold 36px/34px 'Teko', sans-serif;
+
                             }
 
                             .title-child {
                                 font: bold italic 18px/22px 'Titillium Web', sans-serif;
                                 text-align: center;
 
-                                padding: 10px 30px 0px 30px;
+                                padding: 10px 44px 0px 30px;
                             }
                         }
 
                         .warranty-div {
                             padding: 0px;
                             padding-bottom: 20px;
+
+                         
+                            .tick{
+                                height: 51px;
+                            }
+
 
                             span {
                                 font-size: 18px;
@@ -1069,6 +1514,8 @@ body {
                                         line-height: 34px;
                                         padding-left: 15px;
                                         padding-top: 15px;
+                                        width: 100%;
+                                        max-width: 100%;
                                     }
 
                                     .loadout-content {
@@ -1141,7 +1588,8 @@ body {
                                             h2 {
                                                 font-size: 35px;
                                                 line-height: 48px;
-                                                left: 72px;
+                                                left: 82px;
+                                                bottom: 10px;
 
                                             }
 
@@ -1193,6 +1641,7 @@ body {
                             .line-mobile {
                                 padding-left: 22px;
                                 padding-bottom: 3px;
+                                display: block;
                             }
                         }
 
@@ -1213,6 +1662,7 @@ body {
                                         cursor: pointer;
                                         position: absolute;
                                         cursor: pointer;
+                                        display: block;
 
                                         .material-symbols-outlined {
                                             font-size: 32px;
@@ -1276,6 +1726,7 @@ body {
                                         z-index: 1;
                                         padding-top: 11px;
                                         cursor: pointer;
+                                        display: block;
 
                                         .material-symbols-outlined {
                                             font-size: 32px;
@@ -1330,7 +1781,13 @@ body {
 
 
                         .branch-title {
+                            display: block;
+
                             .innerBranch {
+                                width: 100%;
+                                max-width: 100%;
+                                margin: 0;
+
                                 .branchName {
                                     font: bold 21px/21px @titillium;
                                     color: #675A3D;
@@ -1343,7 +1800,7 @@ body {
                                 display: grid;
                                 grid-template-columns: 1fr 1fr 1fr;
                                 max-width: 355px;
-                                margin-left: 10px;
+                                margin: 0 auto;
                                 row-gap: 10px;
 
                                 .branch-details {
@@ -1360,6 +1817,18 @@ body {
                                             }
                                         }
                                     }
+                                }
+                                .lawEnforce{
+                                    display: block;
+                                }
+                                .mariane{
+                                    display: block;
+                                }
+                                .navy{
+                                    display: block;
+                                }
+                                .space{
+                                    display: block;
                                 }
                             }
                         }
@@ -1494,6 +1963,7 @@ body {
 
                         .footer-mobile {
                             display: block;
+                            width: 100%;
                         }
                     }
                 }
