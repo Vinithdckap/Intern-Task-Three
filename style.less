@@ -62,6 +62,8 @@ body {
 
                         .title {
                             font: bold 52px/76px @teko;
+
+
                         }
 
                         .title-child {
@@ -1042,9 +1044,6 @@ body {
 
 }
 
-
-
-
 // media query for tablet screen
 
 
@@ -1241,6 +1240,7 @@ body {
 
                                         .material-symbols-outlined {
                                             font-size: 32px;
+                                            transform: rotate(180deg);
                                         }
                                     }
 
@@ -1453,7 +1453,10 @@ body {
 
 
                             .title {
+
                                 font: bold 36px/34px 'Teko', sans-serif;
+
+
 
                             }
 
@@ -1469,8 +1472,8 @@ body {
                             padding: 0px;
                             padding-bottom: 20px;
 
-                         
-                            .tick{
+
+                            .tick {
                                 height: 51px;
                             }
 
@@ -1639,9 +1642,10 @@ body {
                             }
 
                             .line-mobile {
-                                padding-left: 22px;
+                                padding: 0px 20px;
                                 padding-bottom: 3px;
                                 display: block;
+                                width: 100%;
                             }
                         }
 
@@ -1818,16 +1822,20 @@ body {
                                         }
                                     }
                                 }
-                                .lawEnforce{
+
+                                .lawEnforce {
                                     display: block;
                                 }
-                                .mariane{
+
+                                .mariane {
                                     display: block;
                                 }
-                                .navy{
+
+                                .navy {
                                     display: block;
                                 }
-                                .space{
+
+                                .space {
                                     display: block;
                                 }
                             }
@@ -1974,4 +1982,392 @@ body {
 
     }
 
+}
+
+
+// media query for small mobile screen
+
+@media screen and (min-width:320px) and (max-width:374px) {
+
+    body {
+        .main-container {
+            .inner-main-container {
+                .header-container {
+                    .header-title {
+                        .title-contents {
+                            .title {
+                                font: bold 29px/26px 'Teko', sans-serif;
+
+                            }
+
+                            .title-child {
+                                font: bold italic 15px/19px 'Titillium Web', sans-serif;
+                            }
+                        }
+                    }
+
+                }
+
+                .first-container {
+                    .inner-first-container {
+                        .inner-div-container {
+                            .parentDiv {
+
+                                .btnDiv {
+                                    .colors {
+                                        font: 600 13px/52px 'Teko', sans-serif;
+                                        margin-bottom: 0px;
+                                        height: 27px;
+                                        width: 100%;
+                                        max-width: 134px;
+                                    }
+                                }
+
+                                .inner-parentDiv {
+
+
+                                    .loadout {
+                                        font-size: 46px;
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .outer-first-container {
+                            .outer-div-container {
+                                .grid-container {
+                                    .totalGrids {
+                                        .grids {
+                                            h2 {
+                                                left: 60px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .category {
+                    .inner-category-container {
+                        .line-div {
+                            .line-mobile {
+                                width: 100%;
+                                padding: 0px;
+                            }
+                        }
+
+                        .best-seller-container {
+                            .seller-container {
+                                .articles {
+
+                                    .forward {
+                                        top: 56px;
+
+                                    }
+
+                                    .forwardBtn {
+                                        top: 56px;
+
+                                    }
+
+                                    .seller-details {
+                                        .cardDiv {
+
+                                            max-width: 126px;
+
+                                            .cards {
+                                                .cardImg {
+                                                    max-width: 126px;
+                                                    height: 120px;
+
+                                                    .card-box {
+                                                        width: 100%;
+                                                        max-width: 100px;
+                                                    }
+
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            .outer-seller-container {
+                                .support-div {
+                                    .support-details {
+                                        .details {
+                                            .gearText {
+                                                font: bold 13px/18px 'Sarala', sans-serif;
+                                                color: #FFFFFF;
+                                                /* letter-spacing: 1px; */
+                                                padding: 32px 0px 10px 166px;
+                                            }
+
+                                            .expertText {
+                                                font: 600 12px/15px 'Titillium Web', sans-serif;
+                                                color: #FFFFFF;
+                                                padding: 5px 0px 0px 170px;
+
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+
+
+                .shop-container {
+                    .shop-img {
+                        .branch-title {
+                            .shopUI {
+
+                                max-width: 297px;
+
+                                .branch-details {
+                                    width: 100%;
+                                    max-width: 90px;
+
+                                    .branchDiv {
+                                        .branches {
+                                            .brandImg {
+                                                .shop-box {
+                                                    height: 50px;
+                                                }
+
+                                            }
+
+                                            .shop-info {
+                                                .brand {
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .lawEnforce,
+                                .mariane,
+                                .navy,
+                                .space {
+                                    display: flex;
+                                }
+
+                            }
+                        }
+                    }
+
+
+
+
+
+                    .responders-containers {
+                        .article {
+                            .articleImg {
+                                .article-contents {
+                                    .container-contents {
+                                        .law {
+                                            font: 600 36px/42px @teko;
+                                        }
+
+                                        .gearTitle {
+                                            font: bold 18px/40px 'Titillium Web', sans-serif;
+                                        }
+
+                                    }
+
+                                    .ulLists {
+                                        .articleUL {
+                                            .articleLi {
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    .description-section {
+                        .content-bio {
+                            padding: 66px 20px 56px 20px;
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+            }
+        }
+
+
+
+    }
+}
+
+
+
+// code for responder container title responsive
+@media screen and (min-width:380px)and (max-width:510px) {
+
+
+    body {
+        .main-container {
+            .inner-main-container {
+                .shop-container {
+
+                    .responders-containers{
+                        .article{
+                            .articleImg{
+                                .article-contents{
+                                    .container-contents{
+                                        .law{
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    .description-section {
+
+                        margin-top: 10%;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+// code for responder container title responsive
+@media screen and (min-width:510px)and (max-width:767px) {
+
+
+    body {
+        .main-container {
+            .inner-main-container {
+                .shop-container {
+
+
+                    .responders-containers{
+                        .article{
+                            .articleImg{
+                                .article-contents{
+                                    .container-contents{
+                                        .law{
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .description-section {
+
+                        margin-top: 25%;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media screen and (min-width:800px) and(max-width:1023px) {
+
+body{
+    .main-container{
+        .inner-main-container{
+            .category{
+                .inner-category-container{
+                    .best-seller-container {
+                        .seller-container {
+                            .articles {
+
+                                position: relative;
+
+                                .forward {
+                                    height: 58px;
+                                    width: 36px;
+                                    background: #E3E3E3;
+                                    left: 0px;
+                                    top: 80px;
+                                    z-index: 1;
+                                    padding-top: 11px;
+                                    cursor: pointer;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    display: block;
+
+                                    .material-symbols-outlined {
+                                        font-size: 32px;
+                                    }
+                                }
+
+
+                 
+
+                                // .forwardBtn {
+                                //     height: 58px;
+                                //     width: 36px;
+                                //     background: #E3E3E3;
+                                //     position: absolute;
+                                //     right: 0px;
+                                //     top: 80px;
+                                //     z-index: 1;
+                                //     padding-top: 11px;
+                                //     cursor: pointer;
+                                //     display: block;
+
+                                //     .material-symbols-outlined {
+                                //         font-size: 32px;
+                                //     }
+                                // }
+
+                                .mobile {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                
+
+                    }
+                }
+            }
+        }
+    }
+}
+    
+    
 }
