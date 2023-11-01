@@ -439,10 +439,93 @@ body .main-container .inner-main-container {
   max-width: 1440px;
   margin: 0 auto;
 }
-body .main-container .inner-main-container .header-container .header .header-img .header-pic {
-  width: 100%;
+body .main-container .inner-main-container .header-container .header {
+  background-color: #E0D7C2;
+  height: 37px;
 }
-body .main-container .inner-main-container .header-container .header .header-img .header-mobile {
+body .main-container .inner-main-container .header-container .header .header-top .main-title {
+  font: bold 16px/26px 'Sarala', sans-serif;
+  color: #675A3D;
+  text-align: center;
+  padding-top: 5px;
+}
+body .main-container .inner-main-container .header-container .header-middle {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .main-container .inner-main-container .header-container .header-middle .mobile-toggle {
+  display: none;
+}
+body .main-container .inner-main-container .header-container .header-middle .log-div {
+  padding: 22px 0px 20px 30px;
+}
+body .main-container .inner-main-container .header-container .header-middle .top-div {
+  padding-top: 15px;
+}
+body .main-container .inner-main-container .header-container .header-middle .top-div .question {
+  font: bold 16px/26px 'Sarala', sans-serif;
+  color: #F16C00;
+  text-align: center;
+}
+body .main-container .inner-main-container .header-container .header-middle .top-div .search {
+  position: relative;
+  padding-top: 10px;
+}
+body .main-container .inner-main-container .header-container .header-middle .top-div .search input {
+  width: 530px;
+  height: 40px;
+  background: #EFF0E8;
+  border: none;
+  border-radius: 8px;
+}
+body .main-container .inner-main-container .header-container .header-middle .top-div .search input::placeholder {
+  color: #ABACAB;
+  font: italic 15px/21px 'Titillium Web', sans-serif;
+  padding: 8px 15px;
+}
+body .main-container .inner-main-container .header-container .header-middle .top-div .search i.fa.fa-search {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  color: #727D49;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div {
+  padding-top: 15px;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .nav-links {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .nav-links a {
+  font: bold 13px/21px 'Sarala', sans-serif;
+  color: #6B6B6B;
+  text-decoration: none;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .nav-links hr {
+  height: 14px;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName {
+  display: flex;
+  padding-left: 55px;
+  padding-top: 10px;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartBill {
+  font: 600 12px/12px 'Titillium Web', sans-serif;
+  color: #BF5707;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg .quantity {
+  display: none;
+}
+body .main-container .inner-main-container .header-container .searchMob {
   display: none;
 }
 body .main-container .inner-main-container .header-container .header-title {
@@ -856,7 +939,37 @@ body .main-container .footer-container .footer-div .footer-mobile {
   body .main-container {
     overflow-x: hidden;
   }
-  body .main-container .inner-main-container .header-container .header .header-img .header-mobile {
+  body .main-container .inner-main-container .header-container .header-middle .mobile-toggle {
+    display: block;
+    padding-top: 23px;
+    color: #6B6B6B;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .mobile-toggle .menu {
+    font-size: 30px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .log-div {
+    padding: 16px 0px 14px 0px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .log-div .logo {
+    height: 38px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .top-div {
+    padding-top: 6px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .top-div .question {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .nav-links {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName {
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg .quantity {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .searchMob {
     display: none;
   }
   body .main-container .inner-main-container .header-container .header-title .title-contents {
@@ -1028,6 +1141,47 @@ body .main-container .footer-container .footer-div .footer-mobile {
   }
 }
 @media screen and (max-width: 1023px) {
+  body .main-container .inner-main-container .header-container .header-middle .mobile-toggle {
+    display: block;
+    padding-top: 23px;
+    color: #6B6B6B;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .mobile-toggle .menu {
+    font-size: 30px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .log-div {
+    padding: 22px 0px 20px 0px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .log-div .logo {
+    height: 30px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .top-div {
+    padding-top: 10px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .top-div .question {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .top-div .search input {
+    width: 430px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div {
+    padding-top: 10px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .nav-links {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName {
+    padding-left: 15px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartBill {
+    padding-left: 5px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg .quantity {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .searchMob {
+    display: none;
+  }
   body .main-container .inner-main-container .header-container .header-title .title-contents {
     padding: 38px 0px 37px 30px;
   }
@@ -1233,12 +1387,72 @@ body .main-container .footer-container .footer-div .footer-mobile {
   }
 }
 @media screen and (max-width: 767px) {
-  body .main-container .inner-main-container .header-container .header .header-img .header-pic {
+  body .main-container .inner-main-container .header-container .header-middle {
+    width: 100%;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .log-div .logo {
+    height: 48px;
+    padding-left: 49px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .top-div .question {
     display: none;
   }
-  body .main-container .inner-main-container .header-container .header .header-img .header-mobile {
+  body .main-container .inner-main-container .header-container .header-middle .top-div .search {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .nav-links {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .contact-img {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartBill {
+    display: none;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg {
+    position: relative;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg .quantity {
     display: block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+  }
+  body .main-container .inner-main-container .header-container .header-middle .bottom-div .billName .cartImg .quantity .cartQuantity {
+    font: bold 14px 'Sarala', sans-serif;
+    color: #FFFFFF;
+  }
+  body .main-container .inner-main-container .header-container .searchMob {
+    position: relative;
+    display: block;
+    height: 55px;
+    background-color: #979890;
+  }
+  body .main-container .inner-main-container .header-container .searchMob .inputSearch {
+    padding: 7px;
+  }
+  body .main-container .inner-main-container .header-container .searchMob input {
     width: 100%;
+    height: 40px;
+    background: #EFF0E8;
+    border: none;
+    border-radius: 8px;
+  }
+  body .main-container .inner-main-container .header-container .searchMob input::placeholder {
+    color: #ABACAB;
+    font: italic 15px/21px 'Titillium Web', sans-serif;
+    padding: 8px 15px;
+  }
+  body .main-container .inner-main-container .header-container .searchMob i.fa.fa-search {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    color: #727D49;
   }
   body .main-container .inner-main-container .header-container .header-title {
     display: block;
@@ -1676,28 +1890,5 @@ body .main-container .footer-container .footer-div .footer-mobile {
   }
   body .main-container .inner-main-container .shop-container .description-section {
     margin-top: 25%;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles {
-    position: relative;
-  }
-  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forward {
-    height: 58px;
-    width: 36px;
-    background: #E3E3E3;
-    left: 0px;
-    top: 80px;
-    z-index: 1;
-    padding-top: 11px;
-    position: absolute;
-    cursor: pointer;
-    display: block;
-  }
-  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .forward .material-symbols-outlined {
-    font-size: 32px;
-  }
-  body .main-container .inner-main-container .category .inner-category-container .best-seller-container .seller-container .articles .mobile {
-    display: block;
   }
 }
