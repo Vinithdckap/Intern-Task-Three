@@ -186,6 +186,9 @@
 body button {
   cursor: pointer;
 }
+body a {
+  cursor: pointer;
+}
 body .main-container .inner-main-container {
   width: 100%;
   max-width: 1440px;
@@ -424,6 +427,7 @@ body .main-container .inner-main-container .first-container .inner-first-contain
   font: 600 16px/39px 'Titillium Web', sans-serif;
   text-align: center;
   color: #F16C00;
+  cursor: pointer;
 }
 body .main-container .inner-main-container .category {
   padding-top: 35px;
@@ -686,6 +690,9 @@ body .main-container .footer-container .footer-div .footer-top {
   height: 31px;
   width: 100%;
 }
+body .main-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+  display: none;
+}
 body .main-container .footer-container .footer-div .footer-top .footer-title {
   font: 800 14px/13px 'Source Sans 3', sans-serif;
   color: #FFFFFF;
@@ -714,6 +721,7 @@ body .main-container .footer-container .footer-div .footer-contents .footer-righ
   font: 400 16px/34px 'Sarala', sans-serif;
   color: #D0DD94;
   list-style: none;
+  cursor: pointer;
 }
 body .main-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
   height: 254px;
@@ -825,7 +833,6 @@ body .main-container .footer-container .footer-div .footer-contents .footer-left
   color: #A2A8BA;
 }
 body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns {
-  padding-left: 80px;
   padding-top: 20px;
 }
 body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns .followBtns {
@@ -835,6 +842,10 @@ body .main-container .footer-container .footer-div .footer-contents .footer-left
   font: bold 18px/24px 'Sarala', sans-serif;
   color: #FFFFFF;
   border: 2px solid #ffffff;
+}
+body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns .followBtns:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 body .main-container .footer-container .footer-bottom {
   height: 47px;
@@ -1061,6 +1072,9 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright {
   }
   body .main-container .inner-main-container .shop-container .description-section .content-bio .description-contents {
     font: 400 italic 20px/28px 'Titillium Web', sans-serif;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+    display: none;
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right {
     padding: 25px 0px 0px 20px;
@@ -1355,6 +1369,33 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright {
   }
   body .main-container .inner-main-container .shop-container .description-section .content-bio {
     padding: 75px 82px 56px 80px;
+  }
+  body .main-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+    display: none;
+  }
+  body .main-container .footer-container .footer-div .footer-top .footer-title {
+    font: 800 12px/13px 'Source Sans 3', sans-serif;
+  }
+  body .main-container .footer-container .footer-div .footer-contents {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  body .main-container .footer-container .footer-div .footer-contents .footer-right {
+    padding: 50px 0px 0px 0px;
+    justify-content: space-evenly;
+  }
+  body .main-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
+    display: none;
+  }
+  body .main-container .footer-container .footer-div .footer-contents .footer-middle {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .main-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
+    width: auto;
+  }
+  body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex {
+    display: flex;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1754,8 +1795,86 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright {
     font-size: 16px;
     line-height: 22px;
   }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-top {
+    height: 80px;
+    padding: 10px 10px;
+    display: flex;
+    column-gap: 5px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+    display: block;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-top .footer-title {
+    font: 800 12px/13px 'Source Sans 3', sans-serif;
+    text-align: left;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right {
+    padding: 30px 30px 30px 30px;
+    display: block;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .company {
+    border-bottom: 1px solid #575754;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .first-title {
+    border-top: 1px solid #575754;
+    padding: 10px 0px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .first-title::after {
+    content: "+";
+    float: right;
+    color: #d0dd94;
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists {
+    display: none;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
+    display: none;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-middle {
+    display: block;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .email {
+    width: 100%;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
+    width: auto;
+    margin-left: 38px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex {
+    display: block;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .features {
+    padding-left: 97px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .features .marketing-div .listFeatures {
+    font-size: 17px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-bottom .bottom-div {
+    display: block;
+  }
+  body .main-container .inner-main-container .footer-container .footer-bottom .bottom-div .copyright-div {
+    justify-content: center;
+  }
+  body .main-container .inner-main-container .footer-container .footer-bottom .bottom-div .copyright {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 374px) {
+  body .main-container .inner-main-container .header-container .header-middle .log-div .logo {
+    padding-left: 15px;
+  }
   body .main-container .inner-main-container .header-container .header-title .title-contents .title {
     font: bold 29px/26px 'Teko', sans-serif;
   }
@@ -1815,6 +1934,9 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright {
     width: 100%;
     max-width: 90px;
   }
+  body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branch-details .branchDiv {
+    justify-content: center;
+  }
   body .main-container .inner-main-container .shop-container .shop-img .branch-title .shopUI .branch-details .branchDiv .branches .brandImg .shop-box {
     height: 50px;
   }
@@ -1838,6 +1960,30 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright {
   }
   body .main-container .inner-main-container .shop-container .description-section .content-bio {
     padding: 66px 20px 56px 20px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .news-div {
+    justify-content: center;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .signUpText {
+    text-align: center;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-middle .brand-section .brand-div .dealerInfo {
+    text-align: center;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+    padding: 20px 20px 20px 20px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .social-media-container .connectFb {
+    font-size: 20px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .social-media-container .specialText {
+    font-size: 40px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .features {
+    padding-left: 92px;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .features .marketing-div .listFeatures {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 380px) and (max-width: 510px) {

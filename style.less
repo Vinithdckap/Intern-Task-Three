@@ -31,6 +31,10 @@ body {
         cursor: pointer;
     }
 
+    a {
+        cursor: pointer;
+    }
+
     .main-container {
         .inner-main-container {
 
@@ -394,6 +398,7 @@ body {
                                             font: 600 16px/39px @titillium;
                                             text-align: center;
                                             color: @secondary-color;
+                                            cursor: pointer;
 
                                         }
                                     }
@@ -811,6 +816,10 @@ body {
                     width: 100%;
 
 
+                    .hp-veteran-badge {
+                        display: none;
+                    }
+
                     .footer-title {
 
                         font: 800 14px/13px @sourceSans;
@@ -851,6 +860,7 @@ body {
                                         font: 400 16px/34px @sarala;
                                         color: #D0DD94;
                                         list-style: none;
+                                        cursor: pointer;
 
 
                                     }
@@ -954,6 +964,7 @@ body {
                                 align-items: center;
                                 column-gap: 10px;
 
+
                                 .cardHolder {
                                     font: bold 17px/20px @sarala;
                                     color: #EFF0E8;
@@ -1017,7 +1028,7 @@ body {
 
                             .footerBtns {
 
-                                padding-left: 80px;
+                                // padding-left: 80px;
                                 padding-top: 20px;
 
                                 .followBtns {
@@ -1028,23 +1039,19 @@ body {
                                     color: #FFFFFF;
                                     border: 2px solid #ffffff;
 
-
+                                    &:hover {
+                                        background-color: @tertiary-color;
+                                        color: @primary-font-color;
+                                    }
 
                                 }
+
                             }
 
                         }
 
                     }
                 }
-
-
-
-
-
-
-
-
 
 
             }
@@ -1495,6 +1502,12 @@ body {
 
                 .footer-container {
                     .footer-div {
+
+                        .footer-top {
+                            .hp-veteran-badge {
+                                display: none;
+                            }
+                        }
 
                         .footer-contents {
                             .footer-right {
@@ -2055,6 +2068,59 @@ body {
 
             }
 
+            .footer-container {
+                .footer-div {
+
+                    .footer-top {
+
+                        .hp-veteran-badge {
+                            display: none;
+                        }
+
+                        .footer-title {
+                            font: 800 12px/13px 'Source Sans 3', sans-serif;
+                        }
+                    }
+
+                    .footer-contents {
+
+                        height: auto;
+                        flex-direction: column-reverse;
+
+
+
+                        .footer-right {
+                            padding: 50px 0px 0px 0px;
+                            justify-content: space-evenly;
+
+                            .hrFooter {
+                                display: none;
+                            }
+
+                        }
+
+                        .footer-middle {
+                            display: flex;
+                            justify-content: space-evenly;
+
+                            .hrNews {
+                                width: auto;
+                            }
+                        }
+
+
+                        .footer-left {
+
+                            .inner-footer-left {
+                                .tablet-flex {
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
 
         }
     }
@@ -2069,9 +2135,6 @@ body {
         .main-container {
             .inner-main-container {
                 .header-container {
-
-
-                    .header {}
 
                     .header-middle {
                         width: 100%;
@@ -2340,10 +2403,6 @@ body {
                     }
 
                 }
-
-
-
-
 
                 .category {
                     .inner-category-container {
@@ -2695,15 +2754,143 @@ body {
                 // footer style
 
                 .footer-container {
-                    .footer-div {
-                        // .footer-img {
-                        //     display: none;
-                        // }
 
-                        // .footer-mobile {
-                        //     display: block;
-                        //     width: 100%;
-                        // }
+
+                    .footer-div {
+
+                        .footer-top {
+
+                            height: 80px;
+                            padding: 10px 10px;
+                            display: flex;
+                            column-gap: 5px;
+
+                            .hp-veteran-badge {
+                                display: block;
+                            }
+
+                            .footer-title {
+                                font: 800 12px/13px 'Source Sans 3', sans-serif;
+                                text-align: left;
+                            }
+                        }
+
+                        .footer-contents {
+
+                            height: auto;
+                            flex-direction: column-reverse;
+
+
+
+                            .footer-right {
+                                padding: 30px 30px 30px 30px;
+                                display: block;
+
+                                .first-row-footer {
+
+                                    .company {
+                                        border-bottom: 1px solid #575754;
+
+                                    }
+
+
+                                    .first-title {
+                                        border-top: 1px solid #575754;
+                                        padding: 10px 0px;
+                                    }
+
+                                    .first-title::after {
+                                        content: "+";
+                                        float: right;
+                                        color: #d0dd94;
+                                        padding-right: 10px;
+                                        font-size: 30px;
+                                    }
+
+                                    .footer-lists {
+                                        display: none;
+                                    }
+
+                                }
+
+                                .hrFooter {
+                                    display: none;
+                                }
+
+                            }
+
+                            .footer-middle {
+                                display: block;
+
+                                .newsLetter-section {
+                                    .message-details {
+                                        .email-input {
+                                            .email {
+                                                width: 100%;
+
+                                            }
+                                        }
+                                    }
+
+                                }
+
+
+                                .hrNews {
+                                    width: auto;
+                                    margin-left: 38px;
+
+                                }
+                            }
+
+
+                            .footer-left {
+
+
+                                .inner-footer-left {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 20px 20px 20px 20px;
+
+                                    .tablet-flex {
+                                        display: block;
+
+                                        .features {
+                                            padding-left: 97px;
+
+                                            .marketing-div {
+                                                .listFeatures {
+                                                    font-size: 17px;
+                                                }
+                                            }
+
+
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+
+                    .footer-bottom {
+                        .bottom-div {
+                            display: block;
+
+                            .copyright-div {
+
+                                justify-content: center;
+                            }
+
+                            .copyright {
+                                text-align: center;
+
+                            }
+                        }
+
+
+
                     }
                 }
 
@@ -2724,6 +2911,15 @@ body {
         .main-container {
             .inner-main-container {
                 .header-container {
+                    .header-middle {
+                        .log-div {
+                            .logo {
+                                padding-left: 15px;
+
+                            }
+                        }
+                    }
+
                     .header-title {
                         .title-contents {
                             .title {
@@ -2872,6 +3068,8 @@ body {
                                     max-width: 90px;
 
                                     .branchDiv {
+                                        justify-content: center;
+
                                         .branches {
                                             .brandImg {
                                                 .shop-box {
@@ -2939,13 +3137,77 @@ body {
                     }
                 }
 
+                .footer-container {
+                    .footer-div {
+
+                        .footer-contents {
+
+                            .footer-middle {
+                                .newsLetter-section {
+                                    .message-details {
+                                        .news-div {
+                                            justify-content: center;
+
+                                        }
+
+                                        .signUpText {
+                                            text-align: center;
+
+                                        }
+                                    }
+                                }
+
+                                .brand-section {
+                                    .brand-div {
+                                        .dealerInfo {
+                                            text-align: center;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .footer-left {
+
+                                .inner-footer-left {
+
+                                    padding: 20px 20px 20px 20px;
+
+                                    .tablet-flex {
+                                        .social-media-container {
+                                            .connectFb {
+                                                font-size: 20px;
+                                            }
+
+                                            .specialText {
+                                                font-size: 40px;
+                                            }
+                                        }
+
+                                        .features {
+                                            padding-left: 92px;
+
+                                            .marketing-div {
+                                                .listFeatures {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+
+                                    }
 
 
+                                }
 
+                            }
+                        }
 
-
+                    }
+                }
 
             }
+
+
         }
 
 
