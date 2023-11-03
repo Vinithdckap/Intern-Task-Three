@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="main-container">
         <div class="inner-main-container">
             <div class="header-container">
@@ -25,13 +26,14 @@
                         <img class="header-mobile" src="./Images/header mobile.png" alt=""> -->
                     <!-- </div> -->
                     <div class="header-top">
-                        <h4 class="main-title"><span>FREE</span> Ground Shipping On <span>ALL</span>Orders</h4>
+                        <h4 class="main-title"><span class="free">FREE</span> Ground Shipping On <span
+                                class="free">ALL</span> Orders</h4>
                     </div>
                 </div>
 
                 <div class="header-middle">
                     <div class="mobile-toggle">
-                        <span class="material-symbols-outlined menu">
+                        <span id="menu-icon" class="material-symbols-outlined menu">
                             menu
                         </span>
                     </div>
@@ -45,7 +47,7 @@
                             </h3>
                         </div>
                         <div class="search">
-                            <input type="text" class="searchTerm" placeholder="Search our Site...?">
+                            <input type="text" class="searchTerm" placeholder="Search our Site...">
                             <i class="fa fa-search"></i>
                         </div>
 
@@ -72,9 +74,40 @@
                     </div>
                 </div>
 
+                <div class="header-branch-container">
+                    <div class="type-div">
+                        <div class="navHeadings">
+                            <div class="navDiv">
+                                <ul class="navUL">
+                                    <li class="navLi first"><a href="#">SHOP BY BRANCH</a>
+                                        <span class="material-symbols-outlined drop ">
+                                            expand_more
+                                        </span>
+                                    </li>
+                                    <li class="navLi"><a href="#">SHOP BY NEED</a>
+                                        <span class="material-symbols-outlined drop ">
+                                            expand_more
+                                        </span>
+                                    </li>
+                                    <li class="navLi"><a href="#">SHOP BY COLOR</a>
+                                        <span class="material-symbols-outlined drop ">
+                                            expand_more
+                                        </span>
+                                    </li>
+                                 
+                                        <li class="navLi extra"><a class="warrior " href="#">WARRIOR DISCOUNTS</a>
+                                        </li>
+                                        <li class="navLi extras"><a href="#">DEALS</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="searchMob">
                     <div class="inputSearch">
-                        <input type="text" class="searchTerm" placeholder="Search our Site...?">
+                        <input type="text" class="searchTerm" placeholder="Search our Site...">
                         <i class="fa fa-search"></i>
                     </div>
 
@@ -110,7 +143,9 @@
                                     serious
                                     bag
                                     for serious trips!</p>
-                                <button class="shopBtn">>SHOP LOADOUT</button>
+                                <button class="shopBtn"> <span class="material-symbols-outlined shopDrop ">
+                                        expand_more
+                                    </span> SHOP LOADOUT</button>
                             </div>
                             <div class="btnDiv">
                                 <button class="colors">Available in Many Colors!</button>
@@ -126,7 +161,9 @@
                                 <p class="loadout-content second">Functional zippered closure with plenty of stash
                                     pockets.
                                 </p>
-                                <button class="shopBtn">>SHOP ADMIN</button>
+                                <button class="shopBtn"> <span class="material-symbols-outlined shopDrop ">
+                                    expand_more
+                                </span>SHOP ADMIN</button>
                             </div>
 
                         </div>
@@ -139,18 +176,28 @@
                                 <div class="totalGrids">
                                     <div class="grids">
                                         <img class="garment" src="./Images/garment bag.png" alt="">
-                                        <h2 class="garemntBag">GARMENT BAGS</h2>
-                                        <h4>> SHOP NOW</h4>
+                                        <div class="grid-contents">
+                                            <h2 class="garemntBag">GARMENT BAGS</h2>
+                                            <h4>> SHOP NOW</h4>
+                                        </div>
+
                                     </div>
                                     <div class="grids">
+
                                         <img class="duffle" src="./Images/duffle bags.png" alt="">
-                                        <h2>DUFFLE BAGS</h2>
-                                        <h4>> SHOP NOW</h4>
+                                        <div class="grid-contents">
+                                            <h2>DUFFLE BAGS</h2>
+                                            <h4>> SHOP NOW</h4>
+                                        </div>
+
                                     </div>
                                     <div class="grids">
                                         <img class="assault" src="./Images/Image 118.png" alt="">
-                                        <h2>ASSAULT BAGS</h2>
-                                        <h4>> SHOP NOW</h4>
+                                        <div class="grid-contents">
+                                            <h2>ASSAULT BAGS</h2>
+                                            <h4>> SHOP NOW</h4>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +215,7 @@
                     </div>
                     <div class="line-div">
                         <img class="line" src="./Images/line.png" alt="">
-                        <img class="line-mobile" src="./Images/Group 4967.png" alt="">
+                        <img class="line-mobile" src="./Images/Mobile line.png" alt="">
                     </div>
 
                     <!-- seller container and details -->
@@ -514,8 +561,8 @@
                     <div class="footer-contents">
                         <div class="footer-right">
                             <div class="first-row-footer">
-                                
-                                    <h2 class="first-title">CONTACT</h2>
+
+                                <h2 class="first-title">CONTACT</h2>
                                 <div class="footer-lists">
                                     <ul class="ulContents">
                                         <li class="listContent"><a href=""></a>Visit us</li>
@@ -649,12 +696,16 @@
                             </h3>
                         </div>
 
-                        <p class="copyright">© 2023 Military Luggage. All Rights Reserved. Site by EYStudios</p>
+                        <p class="copyright">© 2023 Military Luggage. All Rights Reserved. Site by <a href="">EYStudios</a> </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+
+<script src="./script.js"></script>
+
 
 </html>
