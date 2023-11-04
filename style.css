@@ -451,13 +451,11 @@ body .main-container .inner-main-container .first-container .inner-first-contain
   border: none;
   margin-top: 20px;
   margin-left: 35px;
-  position: relative;
-  padding-left: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .shopBtn .shopDrop {
-  position: absolute;
-  top: 11px;
-  left: 8px;
   transform: rotate(269deg);
 }
 body .main-container .inner-main-container .first-container .inner-first-container .inner-div-container .parentDiv .inner-parentDiv .shopBtn .material-symbols-outlined {
@@ -499,14 +497,24 @@ body .main-container .inner-main-container .first-container .inner-first-contain
   text-align: center;
   font: bold 50px/68px 'Teko', sans-serif;
   position: absolute;
-  bottom: 10px;
+  bottom: 18px;
   right: 54px;
 }
-body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids .grid-contents h4 {
+body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids .grid-contents .garmentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids .grid-contents .garmentDiv .IconShop {
+  transform: rotate(270deg);
+  color: #F16C00;
+}
+body .main-container .inner-main-container .first-container .inner-first-container .outer-first-container .outer-div-container .grid-container .totalGrids .grids .grid-contents .garmentDiv .shop-BTN {
   font: 600 16px/39px 'Titillium Web', sans-serif;
   text-align: center;
   color: #F16C00;
   cursor: pointer;
+  text-decoration: none;
 }
 body .main-container .inner-main-container .category {
   padding-top: 35px;
@@ -719,6 +727,12 @@ body .main-container .inner-main-container .shop-container .responders-container
   font: 600 20px/48px 'Titillium Web', sans-serif;
   border: none;
   margin-left: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .shopNowBtn .IconShop {
+  transform: rotate(270deg);
 }
 body .main-container .inner-main-container .shop-container .responders-containers .article .articleImg .article-contents .ulLists {
   background: linear-gradient(90deg, #040065 0, #040065 34%, #151074 58%, #7f7be0 79%, #7f7be0 100%);
@@ -923,6 +937,8 @@ body .main-container .footer-container .footer-div .footer-contents .footer-left
 }
 body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns {
   padding-top: 20px;
+  position: relative;
+  right: 19px;
 }
 body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns .followBtns {
   width: 179px;
@@ -1182,7 +1198,8 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright a {
     font: bold 14px/24px 'Sarala', sans-serif;
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists .ulContents .listContent {
-    font: 400 14px/32px 'Sarala', sans-serif;
+    font: 400 14px/22px 'Sarala', sans-serif;
+    padding-top: 20px;
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-middle {
     padding-right: 20px;
@@ -1200,8 +1217,11 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright a {
   body .main-container .inner-main-container .footer-container .footer-div .footer-middle .brand-section {
     padding-left: 20px;
   }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-left {
+    background-image: url(Images/laptop\ footer\ left.png);
+  }
   body .main-container .inner-main-container .footer-container .footer-div .footer-left .inner-footer-left {
-    padding: 20px 44px 20px 18px;
+    padding: 20px 18px 20px 18px;
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-left .inner-footer-left .social-media-container {
     column-gap: 5px;
@@ -1211,6 +1231,9 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright a {
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-left .inner-footer-left .social-media-container .specialText {
     font: bold 46px/30px 'Titillium Web', sans-serif;
+  }
+  body .main-container .inner-main-container .footer-container .footer-div .footer-left .inner-footer-left .features {
+    padding-left: 88px;
   }
   body .main-container .inner-main-container .footer-container .footer-div .footer-left .inner-footer-left .features .marketing-div .listFeatures {
     font-size: 16px;
@@ -1486,7 +1509,7 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright a {
     flex-direction: column-reverse;
   }
   body .main-container .footer-container .footer-div .footer-contents .footer-right {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 20px 0px;
     justify-content: space-evenly;
   }
   body .main-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
@@ -1498,6 +1521,9 @@ body .main-container .footer-container .footer-bottom .bottom-div .copyright a {
   }
   body .main-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
     width: auto;
+  }
+  body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+    position: unset;
   }
   body .main-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex {
     display: flex;
