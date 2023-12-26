@@ -13,6 +13,9 @@
     <link rel="shortcut icon" href="./Images/fireems.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -94,10 +97,10 @@
                                             expand_more
                                         </span>
                                     </li>
-                                 
-                                        <li class="navLi extra"><a class="warrior " href="#">WARRIOR DISCOUNTS</a>
-                                        </li>
-                                        <li class="navLi extras"><a href="#">DEALS</a></li>
+
+                                    <li class="navLi extra"><a class="warrior " href="#">WARRIOR DISCOUNTS</a>
+                                    </li>
+                                    <li class="navLi extras"><a href="#">DEALS</a></li>
 
                                 </ul>
                             </div>
@@ -117,104 +120,115 @@
 
                 <!-- header title -->
                 <div class="header-title">
-                    <div class="title-contents">
-                        <h1 class="title">Huge Selection of Bags, Packs & Cases in Stock!</h1>
-                        <p class="title-child">Ready for deployment? Need a replacement? We have it here!</p>
-                    </div>
-                    <!-- side heading logo -->
-                    <div class="warranty-div">
-                        <img class="tick" src="./Images/tick.png" alt="">
-                        <p class="allProducts">LIFETIME<br>
-                            <span>WARRANTY</span><br><span class="onAllProducts">ON ALL PRODUCTS</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- main first container with featured bags -->
-            <section class="first-container">
-                <div class="inner-first-container">
-                    <div class="inner-div-container">
-                        <div class="parentDiv one">
-                            <div class="inner-parentDiv">
-                                <h1 class="loadout">LOADOUT
-                                    BAGS</h1>
-                                <p class="loadout-content">Designed rugged tough to withstand any terrain. The
-                                    serious
-                                    bag
-                                    for serious trips!</p>
-                                <button class="shopBtn"> <span class="material-symbols-outlined shopDrop ">
-                                        expand_more
-                                    </span> SHOP LOADOUT</button>
-                            </div>
-                            <div class="btnDiv">
-                                <button class="colors">Available in Many Colors!</button>
-
-                            </div>
-
+                    <div class="inner-div-header">
+                        <div class="title-contents">
+                            <h1 class="title">Huge Selection of Bags, Packs & Cases in Stock!</h1>
+                            <p class="title-child">Ready for deployment? Need a replacement? We have it here!</p>
                         </div>
-                        <div class="parentDiv two">
-                            <div class="inner-parentDiv">
-                                <h1 class="loadout">ADMIN<br>
-                                    <span class="loadSpan">ACCESSORIES</span>
-                                </h1>
-                                <p class="loadout-content second">Functional zippered closure with plenty of stash
-                                    pockets.
-                                </p>
-                                <button class="shopBtn"> <span class="material-symbols-outlined shopDrop ">
-                                    expand_more
-                                </span>SHOP ADMIN</button>
-                            </div>
-
+                        <!-- side heading logo -->
+                        <div class="warranty-div">
+                            <img class="tick" src="./Images/tick.png" alt="">
+                            <p class="allProducts">LIFETIME<br>
+                                <span>WARRANTY</span><br><span class="onAllProducts">ON ALL PRODUCTS</span>
+                            </p>
                         </div>
                     </div>
 
-                    <!-- outer first container with  bag varieties -->
-                    <div class="outer-first-container">
-                        <div class="outer-div-container">
-                            <div class="grid-container">
-                                <div class="totalGrids">
-                                    <div class="grids">
-                                        <img class="garment" src="./Images/garment bag.png" alt="">
-                                        <div class="grid-contents">
-                                            <h2 class="garemntBag">GARMENT BAGS</h2>
-                                            <div class="garmentDiv">
-                                             <span  class="material-symbols-outlined IconShop">expand_more</span>
-                                             <a class="shop-BTN" href="#">SHOP NOW</a>
+
+
+                    <section class="first-container">
+                        <div class="inner-first-container">
+                            <div class="inner-div-container">
+                                <div class="parentDiv one">
+                                    <div class="inner-parentDiv">
+                                        <h1 class="loadout">LOADOUT
+                                            BAGS</h1>
+                                        <p class="loadout-content">Designed rugged tough to withstand any terrain. The
+                                            serious
+                                            bag
+                                            for serious trips!</p>
+                                        <button class="shopBtn"> <span class="material-symbols-outlined shopDrop ">
+                                                expand_more
+                                            </span> SHOP LOADOUT</button>
+                                    </div>
+                                    <div class="btnDiv">
+                                        <button class="colors">Available in Many Colors!</button>
+
+                                    </div>
+
+                                </div>
+                                <div class="parentDiv two">
+                                    <div class="inner-parentDiv">
+                                        <h1 class="loadout">ADMIN<br>
+                                            <span class="loadSpan">ACCESSORIES</span>
+                                        </h1>
+                                        <p class="loadout-content second">Functional zippered closure with plenty of
+                                            stash
+                                            pockets.
+                                        </p>
+                                        <button class="shopBtn"> <span class="material-symbols-outlined shopDrop ">
+                                                expand_more
+                                            </span>SHOP ADMIN</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- outer first container with  bag varieties -->
+                            <div class="outer-first-container">
+                                <div class="outer-div-container">
+                                    <div class="grid-container">
+                                        <div class="totalGrids">
+                                            <div class="grids">
+                                                <img class="garment" src="./Images/garment bag.png" alt="">
+                                                <div class="grid-contents">
+                                                    <h2 class="garemntBag">GARMENT BAGS</h2>
+                                                    <div class="garmentDiv">
+                                                        <span
+                                                            class="material-symbols-outlined IconShop">expand_more</span>
+                                                        <a class="shop-BTN" href="#">SHOP NOW</a>
+                                                    </div>
+
+                                                </div>
+
                                             </div>
-                                            
+                                            <div class="grids">
+
+                                                <img class="duffle" src="./Images/duffle bags.png" alt="">
+                                                <div class="grid-contents">
+                                                    <h2>DUFFLE BAGS</h2>
+                                                    <div class="garmentDiv">
+                                                        <span
+                                                            class="material-symbols-outlined IconShop">expand_more</span>
+                                                        <a class="shop-BTN" href="#">SHOP NOW</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="grids">
+                                                <img class="assault" src="./Images/Image 118.png" alt="">
+                                                <div class="grid-contents">
+                                                    <h2>ASSAULT BAGS</h2>
+                                                    <div class="garmentDiv">
+                                                        <span
+                                                            class="material-symbols-outlined IconShop">expand_more</span>
+                                                        <a class="shop-BTN" href="#">SHOP NOW</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
                                         </div>
-
-                                    </div>
-                                    <div class="grids">
-
-                                        <img class="duffle" src="./Images/duffle bags.png" alt="">
-                                        <div class="grid-contents">
-                                            <h2>DUFFLE BAGS</h2>
-                                            <div class="garmentDiv">
-                                                <span  class="material-symbols-outlined IconShop">expand_more</span>
-                                                <a class="shop-BTN" href="#">SHOP NOW</a>
-                                               </div>
-                                                                                       </div>
-
-                                    </div>
-                                    <div class="grids">
-                                        <img class="assault" src="./Images/Image 118.png" alt="">
-                                        <div class="grid-contents">
-                                            <h2>ASSAULT BAGS</h2>
-                                            <div class="garmentDiv">
-                                                <span  class="material-symbols-outlined IconShop">expand_more</span>
-                                                <a class="shop-BTN" href="#">SHOP NOW</a>
-                                               </div>
-                                                                                       </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
+            </div>
+
+            <!-- main first container with featured bags -->
+
 
             <!-- category container -->
             <section class="category">
@@ -521,7 +535,8 @@
                                     <h4 class="gearTitle">GEAR BAGS AND PACKS </h4>
                                 </div>
                                 <div class="shopDiv">
-                                    <button class="shopNowBtn">                                    <span  class="material-symbols-outlined IconShop">expand_more</span>
+                                    <button class="shopNowBtn"> <span
+                                            class="material-symbols-outlined IconShop">expand_more</span>
                                         SHOP NOW</button>
 
                                 </div>
@@ -574,6 +589,9 @@
                             <div class="first-row-footer">
 
                                 <h2 class="first-title">CONTACT</h2>
+                                <span class="material-symbols-outlined add">
+                                    add
+                                </span>
                                 <div class="footer-lists">
                                     <ul class="ulContents">
                                         <li class="listContent"><a href=""></a>Visit us</li>
@@ -587,6 +605,9 @@
 
                             <div class="first-row-footer">
                                 <h2 class="first-title">MY ACCOUNT</h2>
+                                <span class="material-symbols-outlined add">
+                                    add
+                                </span>
                                 <div class="footer-lists">
                                     <ul class="ulContents">
                                         <li class="listContent"><a href=""></a>Login</li>
@@ -601,6 +622,9 @@
 
                             <div class="first-row-footer">
                                 <h2 class="first-title company">COMPANY</h2>
+                                <span class="material-symbols-outlined add">
+                                    add
+                                </span>
                                 <div class="footer-lists">
                                     <ul class="ulContents">
                                         <li class="listContent"><a href=""></a>About</li>
@@ -705,7 +729,8 @@
                             </h3>
                         </div>
 
-                        <p class="copyright">© 2023 Military Luggage. All Rights Reserved. Site by <a href="">EYStudios</a> </p>
+                        <p class="copyright">© 2023 Military Luggage. All Rights Reserved. Site by <a
+                                href="">EYStudios</a> </p>
                     </div>
                 </div>
             </div>

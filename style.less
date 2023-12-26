@@ -276,14 +276,18 @@ body {
                 .header-title {
                     background-image: url(./Images/gradient.png);
                     background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
+                    background-position: top;
+                    background-size: contain;
                     width: 100%;
-                    display: flex;
+                    // display: flex;
 
                     width: 100%;
                     margin: 0 auto;
                     max-width: 1366px;
+
+                    .inner-div-header{
+                        display: flex;
+                    }
 
                     .title-contents {
                         padding: 38px 0px 35px 100px;
@@ -440,7 +444,7 @@ body {
                         }
 
                         .two {
-                            background-image: url(./Images/admin-bag.png);
+                            background-image: url(./Images/Admin-608px.png);
                             background-position: center;
                             background-size: cover;
                             width: 100%;
@@ -1008,6 +1012,9 @@ body {
                                 color: #EFF0E8;
                             }
 
+                            .add{
+                                display: none;
+                            }
                             .footer-lists {
                                 .ulContents {
                                     padding-top: 10px;
@@ -1749,6 +1756,7 @@ body {
                         .footer-left {
 
                             background-image: url(./Images/laptop\ footer\ left.png);
+                            width: 100%;
                             .inner-footer-left {
                                 padding: 20px 18px 20px 18px;
 
@@ -2446,47 +2454,53 @@ body {
                     .header-title {
                         display: block;
 
-                        .title-contents {
-                            padding: 38px 18px 20px 20px;
+                        .inner-div-header{
 
-
-
-                            .title {
-
-                                font: bold 36px/34px 'Teko', sans-serif;
-
-
-
+                            flex-direction: column;
+                            .title-contents {
+                                padding: 38px 18px 20px 20px;
+    
+    
+    
+                                .title {
+    
+                                    font: bold 36px/34px 'Teko', sans-serif;
+    
+    
+    
+                                }
+    
+                                .title-child {
+                                    font: bold italic 18px/22px 'Titillium Web', sans-serif;
+                                    text-align: center;
+    
+                                    padding: 10px 44px 0px 30px;
+                                }
                             }
-
-                            .title-child {
-                                font: bold italic 18px/22px 'Titillium Web', sans-serif;
-                                text-align: center;
-
-                                padding: 10px 44px 0px 30px;
+    
+                            .warranty-div {
+                                padding: 0px;
+                                padding-bottom: 20px;
+    
+    
+                                .tick {
+                                    height: 51px;
+                                }
+    
+    
+                                span {
+                                    font-size: 18px;
+                                    line-height: 17px;
+                                }
+    
+                                .onAllProducts {
+                                    font: bold 11px/18px 'Titillium Web', sans-serif;
+                                }
+    
                             }
                         }
 
-                        .warranty-div {
-                            padding: 0px;
-                            padding-bottom: 20px;
-
-
-                            .tick {
-                                height: 51px;
-                            }
-
-
-                            span {
-                                font-size: 18px;
-                                line-height: 17px;
-                            }
-
-                            .onAllProducts {
-                                font: bold 11px/18px 'Titillium Web', sans-serif;
-                            }
-
-                        }
+                        
                     }
                 }
 
@@ -3017,6 +3031,8 @@ body {
 
                                 .first-row-footer {
 
+                                    position: relative;
+
                                     .company {
                                         border-bottom: 1px solid #575754;
 
@@ -3028,12 +3044,13 @@ body {
                                         padding: 10px 0px;
                                     }
 
-                                    .first-title::after {
-                                        content: "+";
-                                        float: right;
+                                    .add{
+                                        display: block;
+                                        // float: right;
                                         color: #d0dd94;
-                                        padding-right: 10px;
-                                        font-size: 30px;
+                                        position: absolute;
+                                        right:0px;
+                                        top: 10px;
                                     }
 
                                     .footer-lists {
